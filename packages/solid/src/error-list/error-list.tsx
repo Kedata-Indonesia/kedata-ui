@@ -2,7 +2,7 @@ import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
-import { errorListSlots } from '@kedata-ui/slots/error-list';
+import { errorListSlots } from '@kedataindo/slots/error-list';
 import clsx from 'clsx';
 import type { ErrorListProps } from './index.types';
 import {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import useTag from "./useTag";
-import { KiCloseSolid } from "@kedata-ui/vue-icons";
+import { KiCloseSolid } from "@kedataindo/vue-icons";
 import type { TagProps } from "./index.types";
 
 const props = defineProps<TagProps>();

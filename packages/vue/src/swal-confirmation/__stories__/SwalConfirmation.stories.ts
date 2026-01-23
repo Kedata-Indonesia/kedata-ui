@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
-import { KiInfoCircleSolid } from '@kedata-ui/vue-icons';
+import { KiInfoCircleSolid } from '@kedataindo/vue-icons';
 import { computed, h } from 'vue';
 import SwalConfirmation from '../SwalConfirmation.vue';
 import useSwalConfirmation from '../useSwalConfirmation';

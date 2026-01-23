@@ -2,7 +2,7 @@ import type {
   ColorPalette,
   SwalConfirmationClassNames,
   SwalConfirmationIds,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { Component, Setter } from 'solid-js';
 import type Swal from 'sweetalert2';
 import type { SweetAlertResult } from 'sweetalert2';

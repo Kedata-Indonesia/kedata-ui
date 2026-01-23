@@ -1,6 +1,6 @@
 import { useColorPalette } from "../use-color-palette";
 import { dataAttrBoolean } from "@kedata-software/toolkit-js";
-import { tagSlots, tw } from "@kedata-ui/slots";
+import { tagSlots, tw } from "@kedataindo/slots";
 import { computed, type HTMLAttributes } from "vue";
 import type { TagProps } from "./index.types";
 

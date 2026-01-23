@@ -6,7 +6,7 @@ import {
   type HTMLAttributes,
   type InputHTMLAttributes,
 } from 'vue';
-import { passwordInputSlots, tw } from '@kedata-ui/slots';
+import { passwordInputSlots, tw } from '@kedataindo/slots';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
 
 const usePasswordInput = (

@@ -3,7 +3,7 @@ import { useBaseProps } from "../base-props";
 import { useClassNames } from "../class-names";
 import { useTwMerge } from "../tw-merge";
 import { useColorPalette } from "../use-color-palette";
-import { feedbackSlots } from "@kedata-ui/slots/feedback";
+import { feedbackSlots } from "@kedataindo/slots/feedback";
 import clsx from "clsx";
 import { createMemo, splitProps, type Component } from "solid-js";
 

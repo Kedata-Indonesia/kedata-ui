@@ -5,7 +5,7 @@ import type { Component } from 'solid-js';
 import {
   KiCheveronLeftOutline,
   KiCheveronRightOutline,
-} from '@kedata-ui/solid-icons';
+} from '@kedataindo/solid-icons';
 
 const DatePicker: Component<DatePickerProps> = (props) => {
   const api = createDatePicker(props);

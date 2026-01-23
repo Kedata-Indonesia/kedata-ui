@@ -1,6 +1,6 @@
 import Feedback from '../feedback';
 import { Meta, StoryObj } from 'storybook-solidjs';
-import { KiExclamationSolid } from '@kedata-ui/solid-icons';
+import { KiExclamationSolid } from '@kedataindo/solid-icons';
 
 const Base: StoryObj<typeof Feedback> = {
   args: {

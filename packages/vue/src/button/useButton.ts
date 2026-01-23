@@ -1,5 +1,5 @@
 import { useColorPalette } from "../use-color-palette";
-import { buttonSlots, tw } from "@kedata-ui/slots";
+import { buttonSlots, tw } from "@kedataindo/slots";
 import { computed, type HTMLAttributes } from "vue";
 import type { ButtonProps } from "./index.types";
 import { dataAttrBoolean } from "@kedata-software/toolkit-js";

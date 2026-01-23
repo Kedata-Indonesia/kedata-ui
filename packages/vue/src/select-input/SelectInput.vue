@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import useSelectInput from './useSelectInput';
 import type { SelectInputProps } from './index.types';
-import { KiCheveronDownSolid } from '@kedata-ui/vue-icons';
+import { KiCheveronDownSolid } from '@kedataindo/vue-icons';
 import { Tag } from '../tag';
 import { SelectPicker } from '../select-picker';
 import animateStatePreset from '../animate-state-preset';

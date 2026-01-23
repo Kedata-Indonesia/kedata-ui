@@ -1,7 +1,7 @@
 import { join } from 'path';
 import type { Config } from 'tailwindcss';
 import twAnimate from 'tailwindcss-animate';
-import { kedataPlugin, colors, fontSize } from '@kedata-ui/tailwind';
+import { kedataPlugin, colors, fontSize } from '@kedataindo/tailwind';
 
 const config: Config = {
   darkMode: ['variant', '.dark &:not(.light)'],

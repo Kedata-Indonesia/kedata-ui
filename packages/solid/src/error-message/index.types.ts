@@ -2,7 +2,7 @@ import type { TestableProps } from '../types';
 import type {
   ColorPalette,
   ErrorMessageClassNames,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { ComponentProps } from 'solid-js';
 
 export type WithErrorMessageProps = {

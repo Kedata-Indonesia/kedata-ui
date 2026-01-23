@@ -1,4 +1,4 @@
-import type { PasswordInputClassNames } from '@kedata-ui/slots';
+import type { PasswordInputClassNames } from '@kedataindo/slots';
 import type { TextInputBaseProps } from '../text-input';
 import type { ComponentProps, Ref } from 'solid-js';
 

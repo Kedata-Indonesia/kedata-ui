@@ -4,7 +4,7 @@ import { normalizeProps, useMachine, type PropTypes } from '@zag-js/vue';
 import { computed, inject, onMounted, useId, type ComputedRef } from 'vue';
 import type { MenuEmits, MenuItemOption } from './index.types';
 import MenuContextKey from './MenuContext';
-import { tw, type menuSlots } from '@kedata-ui/slots';
+import { tw, type menuSlots } from '@kedataindo/slots';
 import clsx from 'clsx';
 
 // const props = defineProps<{ option: MenuItemOption }>();

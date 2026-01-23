@@ -1,6 +1,6 @@
 <script setup lang="ts" generic="D">
 import { Button } from "../button";
-import { swalConfirmationSlots, tw } from "@kedata-ui/slots";
+import { swalConfirmationSlots, tw } from "@kedataindo/slots";
 import { computed, ref, useSlots } from "vue";
 import type { SwalConfirmationProps } from "./index.types";
 import { useColorPalette } from "../use-color-palette";

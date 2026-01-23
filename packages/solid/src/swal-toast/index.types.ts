@@ -2,7 +2,7 @@ import type {
   ColorPalette,
   SwalToastClassNames,
   SwalToastIds,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { Component } from 'solid-js';
 import type { ClassNameValue } from 'tailwind-merge';
 

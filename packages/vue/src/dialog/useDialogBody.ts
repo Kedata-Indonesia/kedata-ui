@@ -1,4 +1,4 @@
-import { dialogBodySlots, tw } from "@kedata-ui/slots";
+import { dialogBodySlots, tw } from "@kedataindo/slots";
 import { computed, type HTMLAttributes } from "vue";
 import type { DialogBodyProps } from "./index.types";
 

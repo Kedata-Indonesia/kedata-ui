@@ -2,7 +2,7 @@ import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
-import { avatarSlots } from '@kedata-ui/slots/avatar';
+import { avatarSlots } from '@kedataindo/slots/avatar';
 import * as avatar from '@zag-js/avatar';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import clsx from 'clsx';

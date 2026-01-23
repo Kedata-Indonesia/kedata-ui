@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { swalToastSlots, tw } from "@kedata-ui/slots";
+import { swalToastSlots, tw } from "@kedataindo/slots";
 import { computed, useSlots } from "vue";
 import type { SwalToastProps } from "./index.types";
 import { useColorPalette } from "../use-color-palette";

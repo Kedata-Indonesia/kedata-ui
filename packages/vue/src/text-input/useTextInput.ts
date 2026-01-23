@@ -1,5 +1,5 @@
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
-import { textInputSlots, tw } from '@kedata-ui/slots';
+import { textInputSlots, tw } from '@kedataindo/slots';
 import { computed, type HTMLAttributes, type InputHTMLAttributes, type SetupContext } from 'vue';
 import type { TextInputModels, TextInputProps } from './index.types';
 import { useColorPalette } from '../use-color-palette';

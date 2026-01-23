@@ -1,5 +1,5 @@
 import type { TestableProps, WithFieldProps } from '../types';
-import type { ColorPalette, SwitchClassNames } from '@kedata-ui/slots';
+import type { ColorPalette, SwitchClassNames } from '@kedataindo/slots';
 import type { ElementIds } from '@zag-js/switch';
 import type { ComponentProps, JSX, Ref } from 'solid-js';
 

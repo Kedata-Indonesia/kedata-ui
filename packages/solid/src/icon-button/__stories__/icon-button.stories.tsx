@@ -1,6 +1,6 @@
 import IconButton from '../icon-button';
 import { Meta, StoryObj } from 'storybook-solidjs';
-import { KiSearchSolid } from '@kedata-ui/solid-icons';
+import { KiSearchSolid } from '@kedataindo/solid-icons';
 
 const Base: StoryObj<typeof IconButton> = {
   args: {

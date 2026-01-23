@@ -1,6 +1,6 @@
 import type { ModelRef } from "vue";
 import type { WithFieldProps } from "../types";
-import type { ColorPalette, TextInputClassNames } from "@kedata-ui/slots";
+import type { ColorPalette, TextInputClassNames } from "@kedataindo/slots";
 
 export type TextInputProps = WithFieldProps & {
   id?: string;

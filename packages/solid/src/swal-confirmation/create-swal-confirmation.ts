@@ -1,7 +1,7 @@
 import type { SwalConfirmationFireProps } from './index.types';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import type { ColorPalette } from '@kedata-ui/slots';
+import type { ColorPalette } from '@kedataindo/slots';
 import SwalConfirmation from './swal-confirmation';
 
 const createSwalConfirmation = () => {

@@ -1,5 +1,5 @@
-import { swalToastSlots } from '@kedata-ui/slots/swal-toast';
-import tw from '@kedata-ui/slots/tw';
+import { swalToastSlots } from '@kedataindo/slots/swal-toast';
+import tw from '@kedataindo/slots/tw';
 import clsx from 'clsx';
 import { createComponent, createMemo } from 'solid-js';
 import { render } from 'solid-js/web';

@@ -1,4 +1,4 @@
-import type { DataTableClassNames } from '@kedata-ui/slots';
+import type { DataTableClassNames } from '@kedataindo/slots';
 import type { Accessor, Component, ComponentProps, JSX } from 'solid-js';
 
 export type DataTableColumn = {

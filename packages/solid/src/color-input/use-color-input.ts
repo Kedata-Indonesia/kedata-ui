@@ -6,7 +6,7 @@ import createAnimateState, {
 } from '../create-animate-state';
 import { createControlledSignal } from '../create-controlled-signal';
 import { createDialogHolder } from '../create-dialog-holder';
-import { colorInputSlots } from '@kedata-ui/slots/color-input';
+import { colorInputSlots } from '@kedataindo/slots/color-input';
 import * as popover from '@zag-js/popover';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import { createMemo, mergeProps } from 'solid-js';

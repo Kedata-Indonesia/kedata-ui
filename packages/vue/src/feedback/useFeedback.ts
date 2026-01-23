@@ -1,6 +1,6 @@
 import { computed, type HTMLAttributes } from 'vue';
 import type { FeedbackProps } from './index.types';
-import { feedbackSlots, tw } from '@kedata-ui/slots';
+import { feedbackSlots, tw } from '@kedataindo/slots';
 import { useColorPalette } from '../use-color-palette';
 
 const useFeedback = (props: FeedbackProps) => {

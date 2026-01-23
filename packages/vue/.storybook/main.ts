@@ -17,9 +17,9 @@ const config: StorybookConfig = {
     return mergeConfig(config, {
       resolve: {
         alias: {
-          '@kedata-ui/slots': join(__dirname, '..', '..', 'slots', 'src'),
-          '@kedata-ui/toolkit': join(__dirname, '..', '..', 'toolkit', 'src'),
-          '@kedata-ui/vue-icons': join(
+          '@kedataindo/slots': join(__dirname, '..', '..', 'slots', 'src'),
+          '@kedataindo/toolkit': join(__dirname, '..', '..', 'toolkit', 'src'),
+          '@kedataindo/vue-icons': join(
             __dirname,
             '..',
             '..',

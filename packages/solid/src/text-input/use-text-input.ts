@@ -3,7 +3,7 @@ import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
 import { createControlledSignal } from '../create-controlled-signal';
-import { textInputSlots } from '@kedata-ui/slots/text-input';
+import { textInputSlots } from '@kedataindo/slots/text-input';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
 import clsx from 'clsx';
 import {

@@ -1,4 +1,4 @@
-import type { FormFieldLabelPlacement } from "@kedata-ui/slots";
+import type { FormFieldLabelPlacement } from "@kedataindo/slots";
 import type { WithLabelProps } from "../label";
 
 export type FormFieldProps = WithLabelProps & {

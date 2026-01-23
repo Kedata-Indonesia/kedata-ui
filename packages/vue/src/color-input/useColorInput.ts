@@ -1,4 +1,4 @@
-import { colorInputSlots } from '@kedata-ui/slots/color-input';
+import { colorInputSlots } from '@kedataindo/slots/color-input';
 import * as popover from '@zag-js/popover';
 import { normalizeProps, useMachine } from '@zag-js/vue';
 import type { ColorInputProps } from './index.types';
@@ -7,7 +7,7 @@ import type { ColorPickerProps } from '../color-picker';
 import type { ColorInputModels } from './index.types';
 import { useColorPalette } from '../use-color-palette';
 import { computed, useId, type HTMLAttributes } from 'vue';
-import { tw } from '@kedata-ui/slots';
+import { tw } from '@kedataindo/slots';
 
 const useColorInput = (props: ColorInputProps, models: ColorInputModels) => {
   const colorPaletteClassName = useColorPalette(() => props.colorPalette);

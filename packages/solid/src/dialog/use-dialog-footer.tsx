@@ -1,7 +1,7 @@
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { dialogFooterSlots } from '@kedata-ui/slots/dialog-footer';
+import { dialogFooterSlots } from '@kedataindo/slots/dialog-footer';
 import clsx from 'clsx';
 import {
   createMemo,

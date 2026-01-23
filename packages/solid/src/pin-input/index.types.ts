@@ -1,4 +1,4 @@
-import type { ColorPalette, PinInputClassNames } from '@kedata-ui/slots';
+import type { ColorPalette, PinInputClassNames } from '@kedataindo/slots';
 import type { ComponentProps } from 'solid-js';
 
 export type PinInputBaseProps = {

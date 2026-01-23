@@ -3,7 +3,7 @@ import type {
   TagClassNames,
   TagIds,
   TagVariant,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { ComponentProps } from 'solid-js';
 
 export type TagBaseProps = {

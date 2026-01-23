@@ -3,7 +3,7 @@ import { Tag } from '../tag';
 import { useTwMerge } from '../tw-merge';
 import type { SelectInputProps } from './index.types';
 import type { Component } from 'solid-js';
-import { KiCheveronDownSolid } from '@kedata-ui/solid-icons';
+import { KiCheveronDownSolid } from '@kedataindo/solid-icons';
 import { SelectPicker } from '../select-picker';
 
 const SelectField: Component<SelectInputProps> = (props) => {

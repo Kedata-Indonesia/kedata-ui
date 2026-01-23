@@ -1,6 +1,6 @@
 import type { ModelRef } from "vue";
 import type { WithFieldProps } from "../types";
-import type { ColorPalette } from "@kedata-ui/slots";
+import type { ColorPalette } from "@kedataindo/slots";
 
 export type SwitchProps = WithFieldProps & {
   value?: string;

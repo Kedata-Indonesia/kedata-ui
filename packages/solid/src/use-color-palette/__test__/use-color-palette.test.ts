@@ -2,7 +2,7 @@ import { renderHook } from '@solidjs/testing-library';
 import { describe, test, expect } from 'vitest';
 import useColorPalette from '../use-color-palette';
 import colorPaletteClassNames from '../../color-palette-class-names';
-import type { ColorPalette } from '@kedata-ui/slots';
+import type { ColorPalette } from '@kedataindo/slots';
 
 describe('useColorPalette', () => {
   test('returns primary color palette class name by default', () => {

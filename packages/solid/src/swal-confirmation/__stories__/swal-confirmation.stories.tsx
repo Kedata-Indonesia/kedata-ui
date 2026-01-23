@@ -2,7 +2,7 @@ import SwalConfirmation from '../swal-confirmation';
 import { Button } from '../../button';
 import type { SwalConfirmationFireProps } from '../index.types';
 import { Meta, StoryObj } from 'storybook-solidjs';
-import { KiTrashCanSolid } from '@kedata-ui/solid-icons';
+import { KiTrashCanSolid } from '@kedataindo/solid-icons';
 
 const Base: StoryObj<SwalConfirmationFireProps> = {
   args: {

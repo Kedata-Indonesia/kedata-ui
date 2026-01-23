@@ -1,4 +1,4 @@
-import type { ChatBubbleVariant } from "@kedata-ui/slots";
+import type { ChatBubbleVariant } from "@kedataindo/slots";
 
 export type ChatBubbleProps = {
   id?: string;

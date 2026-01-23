@@ -2,7 +2,7 @@ import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { FormContext } from '../form';
 import { useTwMerge } from '../tw-merge';
-import { formFieldSlots } from '@kedata-ui/slots/form-field';
+import { formFieldSlots } from '@kedataindo/slots/form-field';
 import clsx from 'clsx';
 import { createMemo, mergeProps, splitProps, useContext } from 'solid-js';
 import type { FormFieldProps } from './index.types';

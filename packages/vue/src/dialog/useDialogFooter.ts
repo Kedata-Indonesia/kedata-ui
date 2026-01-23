@@ -1,4 +1,4 @@
-import { dialogFooterSlots, tw } from "@kedata-ui/slots";
+import { dialogFooterSlots, tw } from "@kedataindo/slots";
 import { computed, type HTMLAttributes } from "vue";
 import type { DialogFooterProps } from "./index.types";
 

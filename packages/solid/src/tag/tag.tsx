@@ -1,5 +1,5 @@
 import useTag from './use-tag';
-import { KiCloseSolid } from '@kedata-ui/solid-icons';
+import { KiCloseSolid } from '@kedataindo/solid-icons';
 import type { Component } from 'solid-js';
 import type { TagProps } from './index.types';
 

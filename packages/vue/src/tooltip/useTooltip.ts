@@ -1,4 +1,4 @@
-import { tooltipSlots } from "@kedata-ui/slots";
+import { tooltipSlots } from "@kedataindo/slots";
 import type { TooltipModels, TooltipProps } from "./index.types";
 import * as tooltip from "@zag-js/tooltip";
 import { useMachine, normalizeProps } from "@zag-js/vue";

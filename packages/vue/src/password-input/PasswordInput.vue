@@ -2,8 +2,8 @@
 import usePasswordInput from "./usePasswordInput";
 import type { PasswordInputProps } from "./index.types";
 import { useSlots } from "vue";
-import { KiEyesOffSolid, KiEyeSolid } from "@kedata-ui/vue-icons";
-import { tw } from "@kedata-ui/slots";
+import { KiEyesOffSolid, KiEyeSolid } from "@kedataindo/vue-icons";
+import { tw } from "@kedataindo/slots";
 
 defineOptions({
   inheritAttrs: false,

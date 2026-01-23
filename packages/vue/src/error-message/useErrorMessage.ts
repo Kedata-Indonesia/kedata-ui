@@ -1,4 +1,4 @@
-import { errorMessageSlots, tw } from '@kedata-ui/slots';
+import { errorMessageSlots, tw } from '@kedataindo/slots';
 import { computed, type HTMLAttributes } from 'vue';
 import type { ErrorMessageProps } from './index.types';
 import { useColorPalette } from '../use-color-palette';

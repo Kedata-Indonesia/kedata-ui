@@ -8,7 +8,7 @@ const vitestConfig = defineConfig({
   plugins: [solidPlugin()],
   resolve: {
     alias: {
-      '@kedata-ui/slots': join(
+      '@kedataindo/slots': join(
         __dirname,
         '..',
         '..',
@@ -16,7 +16,7 @@ const vitestConfig = defineConfig({
         'slots',
         'src',
       ),
-      '@kedata-ui/solid-icons': join(
+      '@kedataindo/solid-icons': join(
         __dirname,
         '..',
         '..',

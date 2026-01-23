@@ -1,6 +1,6 @@
 import { Button } from '../button';
-import { swalAlertSlots } from '@kedata-ui/slots/swal-alert';
-import tw from '@kedata-ui/slots/tw';
+import { swalAlertSlots } from '@kedataindo/slots/swal-alert';
+import tw from '@kedataindo/slots/tw';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
 import clsx from 'clsx';
 import { createMemo, createSignal } from 'solid-js';

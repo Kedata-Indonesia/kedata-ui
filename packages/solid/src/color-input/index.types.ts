@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'solid-js';
 import type { WithInputProps } from '../input';
 import type { WithFieldProps } from '../types';
-import type { ColorInputClassNames } from '@kedata-ui/slots';
+import type { ColorInputClassNames } from '@kedataindo/slots';
 
 export type ColorInputBaseProps = WithFieldProps & {
   value?: string;

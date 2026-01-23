@@ -2,7 +2,7 @@ import type {
   ColorPalette,
   SwalAlertClassNames,
   SwalAlertIds,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { SweetAlertResult } from 'sweetalert2';
 import type { ClassNameValue } from 'tailwind-merge';
 

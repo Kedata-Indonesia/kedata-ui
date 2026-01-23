@@ -5,7 +5,7 @@ import createAnimateState, {
   animateStatePreset,
 } from '../create-animate-state';
 import { createControlledSignal } from '../create-controlled-signal';
-import { popoverSlots } from '@kedata-ui/slots/popover';
+import { popoverSlots } from '@kedataindo/slots/popover';
 import * as popover from '@zag-js/popover';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import clsx from 'clsx';

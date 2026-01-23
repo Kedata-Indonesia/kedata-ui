@@ -1,6 +1,6 @@
 import { computed, useId, type HTMLAttributes } from 'vue';
 import type { SelectPickerModels, SelectPickerProps } from './index.types';
-import { selectPickerSlots, tw } from '@kedata-ui/slots';
+import { selectPickerSlots, tw } from '@kedataindo/slots';
 import * as select from '@zag-js/select';
 import { normalizeProps, useMachine } from '@zag-js/vue';
 import { dataAttrBoolean, defaultArray } from '@kedata-software/toolkit-js';

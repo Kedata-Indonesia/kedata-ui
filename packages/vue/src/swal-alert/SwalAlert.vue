@@ -1,5 +1,5 @@
 <script setup lang="ts" generic="D">
-import { swalAlertSlots } from '@kedata-ui/slots';
+import { swalAlertSlots } from '@kedataindo/slots';
 import { computed, ref } from 'vue';
 import { Button } from '../button';
 import type { SwalAlertProps } from './index.types';

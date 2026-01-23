@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from 'storybook-solidjs';
 import SelectField from '../select-input';
-import { KiSearchSolid } from '@kedata-ui/solid-icons';
+import { KiSearchSolid } from '@kedataindo/solid-icons';
 
 const Default: StoryObj<typeof SelectField> = {
   args: {

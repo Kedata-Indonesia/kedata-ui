@@ -1,7 +1,7 @@
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { dialogBodySlots } from '@kedata-ui/slots/dialog-body';
+import { dialogBodySlots } from '@kedataindo/slots/dialog-body';
 import clsx from 'clsx';
 import type { DialogBodyProps } from './index.types';
 import {

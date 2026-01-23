@@ -1,4 +1,4 @@
-import type { ButtonSize, ButtonVariant, ColorPalette } from '@kedata-ui/slots';
+import type { ButtonSize, ButtonVariant, ColorPalette } from '@kedataindo/slots';
 
 export type ButtonProps = {
   class?: string;

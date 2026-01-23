@@ -1,7 +1,7 @@
 import { computed, useId, type HTMLAttributes } from "vue";
 import type { AvatarProps } from "./index.types";
 import { normalizeProps, useMachine } from "@zag-js/vue";
-import { avatarSlots } from "@kedata-ui/slots";
+import { avatarSlots } from "@kedataindo/slots";
 import * as avatar from "@zag-js/avatar";
 import { useColorPalette } from "../use-color-palette";
 

@@ -2,7 +2,7 @@ import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { createControlledSignal } from '../create-controlled-signal';
-import { tooltipSlots } from '@kedata-ui/slots/tooltip';
+import { tooltipSlots } from '@kedataindo/slots/tooltip';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import * as tooltip from '@zag-js/tooltip';
 import clsx from 'clsx';

@@ -3,7 +3,7 @@ import type { ButtonBaseProps } from '../button';
 import type {
   IconButtonClassNames,
   IconButtonIds,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 
 export type IconButtonBaseProps = {
   'aria-label': string;

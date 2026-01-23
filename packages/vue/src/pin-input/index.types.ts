@@ -1,4 +1,4 @@
-import type { ColorPalette, PinInputClassNames } from '@kedata-ui/slots';
+import type { ColorPalette, PinInputClassNames } from '@kedataindo/slots';
 import type { ModelRef } from 'vue';
 
 export type PinInputBaseProps = {

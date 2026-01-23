@@ -1,4 +1,4 @@
-import type { RadioGroupClassNames } from '@kedata-ui/slots';
+import type { RadioGroupClassNames } from '@kedataindo/slots';
 import type { TestableProps } from '../types';
 import type { Component, ComponentProps } from 'solid-js';
 

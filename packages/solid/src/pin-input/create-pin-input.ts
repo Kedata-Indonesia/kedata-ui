@@ -4,7 +4,7 @@ import { createControlledSignal } from '../create-controlled-signal';
 import { useTwMerge } from '../tw-merge';
 import useColorPalette from '../use-color-palette';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
-import { pinInputSlots } from '@kedata-ui/slots/pin-input';
+import { pinInputSlots } from '@kedataindo/slots/pin-input';
 import * as pinInput from '@zag-js/pin-input';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import { createMemo, mergeProps } from 'solid-js';

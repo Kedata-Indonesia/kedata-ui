@@ -3,7 +3,7 @@ import { useClassNames } from '../class-names';
 import { createControlledSignal } from '../create-controlled-signal';
 import { useTwMerge } from '../tw-merge';
 import { CalendarDate } from '@internationalized/date';
-import { datePickerSlots } from '@kedata-ui/slots';
+import { datePickerSlots } from '@kedataindo/slots';
 import * as datepicker from '@zag-js/date-picker';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import clsx from 'clsx';

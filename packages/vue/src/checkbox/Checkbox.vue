@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { CheckboxProps } from "./index.types";
 import useCheckbox from "./useCheckbox";
-import { KiMinusOutline, KiCheckOutline } from "@kedata-ui/vue-icons";
+import { KiMinusOutline, KiCheckOutline } from "@kedataindo/vue-icons";
 
 const props = defineProps<CheckboxProps>();
 const model = defineModel<boolean | string[]>({

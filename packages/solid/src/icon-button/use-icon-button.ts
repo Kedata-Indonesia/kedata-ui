@@ -2,7 +2,7 @@ import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
-import { iconButtonSlots } from '@kedata-ui/slots/icon-button';
+import { iconButtonSlots } from '@kedataindo/slots/icon-button';
 import clsx from 'clsx';
 import { createMemo, mergeProps, splitProps } from 'solid-js';
 import type { IconButtonProps } from './index.types';

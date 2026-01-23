@@ -1,4 +1,4 @@
-import type { TooltipClassNames } from '@kedata-ui/slots';
+import type { TooltipClassNames } from '@kedataindo/slots';
 import type { Component } from 'solid-js';
 
 export type TooltipBaseProps = {

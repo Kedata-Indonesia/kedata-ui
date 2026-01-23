@@ -1,4 +1,4 @@
-import type { ColorPalette } from '@kedata-ui/slots';
+import type { ColorPalette } from '@kedataindo/slots';
 
 const colorPaletteClassNames: Record<ColorPalette, string> = {
   primary: 'color-palette-primary',

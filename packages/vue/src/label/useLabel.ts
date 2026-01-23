@@ -1,4 +1,4 @@
-import { labelSlots, tw } from '@kedata-ui/slots';
+import { labelSlots, tw } from '@kedataindo/slots';
 import { computed, type HTMLAttributes } from 'vue';
 import type { LabelProps } from './index.types';
 

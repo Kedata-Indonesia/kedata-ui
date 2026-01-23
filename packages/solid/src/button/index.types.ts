@@ -4,7 +4,7 @@ import type {
   ButtonSize,
   ButtonVariant,
   ColorPalette,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { Component, ComponentProps, JSX } from 'solid-js';
 
 export type ButtonBaseProps = {

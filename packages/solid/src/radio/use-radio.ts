@@ -4,7 +4,7 @@ import { createControlledSignal } from '../create-controlled-signal';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
-import { radioSlots } from '@kedata-ui/slots/radio';
+import { radioSlots } from '@kedataindo/slots/radio';
 import clsx from 'clsx';
 import {
   createMemo,

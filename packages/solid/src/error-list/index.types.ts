@@ -1,7 +1,7 @@
 import type {
   ColorPalette,
   ErrorListClassNames,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { ComponentProps } from 'solid-js';
 
 export type WithErrorListProps = {

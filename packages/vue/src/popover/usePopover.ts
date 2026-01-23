@@ -1,4 +1,4 @@
-import { popoverSlots, tw } from '@kedata-ui/slots';
+import { popoverSlots, tw } from '@kedataindo/slots';
 import * as popover from '@zag-js/popover';
 import { normalizeProps, useMachine } from '@zag-js/vue';
 import type { PopoverModels, PopoverProps } from './index.types';

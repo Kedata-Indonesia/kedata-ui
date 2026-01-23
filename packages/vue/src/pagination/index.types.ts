@@ -3,7 +3,7 @@ import type {
   ButtonVariant,
   ColorPalette,
   PaginationClassNames,
-} from "@kedata-ui/slots";
+} from "@kedataindo/slots";
 import type { ModelRef } from "vue";
 
 export type PaginationBaseProps = {

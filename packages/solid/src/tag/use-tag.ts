@@ -2,7 +2,7 @@ import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
-import { tagSlots } from '@kedata-ui/slots/tag';
+import { tagSlots } from '@kedataindo/slots/tag';
 import clsx from 'clsx';
 import {
   createMemo,

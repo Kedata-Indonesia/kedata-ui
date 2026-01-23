@@ -1,5 +1,5 @@
 import useCheckbox from './use-checkbox';
-import { KiCheckOutline, KiMinusOutline } from '@kedata-ui/solid-icons';
+import { KiCheckOutline, KiMinusOutline } from '@kedataindo/solid-icons';
 import type { CheckboxProps } from './index.types';
 import type { Component } from 'solid-js';
 

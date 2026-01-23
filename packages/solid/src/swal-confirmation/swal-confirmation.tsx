@@ -1,7 +1,7 @@
 import { Button } from '../button';
 import { useColorPalette } from '../use-color-palette';
-import { swalConfirmationSlots } from '@kedata-ui/slots/swal-confirmation';
-import tw from '@kedata-ui/slots/tw';
+import { swalConfirmationSlots } from '@kedataindo/slots/swal-confirmation';
+import tw from '@kedataindo/slots/tw';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
 import clsx from 'clsx';
 import { createMemo, createSignal } from 'solid-js';

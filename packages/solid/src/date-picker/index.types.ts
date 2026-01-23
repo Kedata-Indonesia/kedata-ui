@@ -1,4 +1,4 @@
-import type { DatePickerClassNames } from '@kedata-ui/slots';
+import type { DatePickerClassNames } from '@kedataindo/slots';
 import type { SelectionMode } from '@zag-js/date-picker';
 import type { ComponentProps } from 'solid-js';
 

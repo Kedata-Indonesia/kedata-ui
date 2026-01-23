@@ -1,4 +1,4 @@
-import type { ColorPalette } from "@kedata-ui/slots";
+import type { ColorPalette } from "@kedataindo/slots";
 import { computed, type ComputedGetter } from "vue";
 
 const useColorPalette = (

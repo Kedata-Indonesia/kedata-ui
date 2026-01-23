@@ -3,7 +3,7 @@ import { normalizeProps, useMachine } from "@zag-js/vue";
 import type { PaginationModels, PaginationProps } from "./index.types";
 import { computed, effect, type HTMLAttributes } from "vue";
 import { useColorPalette } from "../use-color-palette";
-import { paginationSlots, tw } from "@kedata-ui/slots";
+import { paginationSlots, tw } from "@kedataindo/slots";
 
 const usePagination = (props: PaginationProps, models: PaginationModels) => {
   const colorPaletteClass = useColorPalette(() => props.colorPalette);

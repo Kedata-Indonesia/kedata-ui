@@ -6,7 +6,7 @@ import {
   type SVGAttributes,
 } from 'vue';
 import type { SelectInputModels, SelectInputProps } from './index.types';
-import { selectInputSlots, tw } from '@kedata-ui/slots';
+import { selectInputSlots, tw } from '@kedataindo/slots';
 import * as popover from '@zag-js/popover';
 import { normalizeProps, useMachine } from '@zag-js/vue';
 import { useColorPalette } from '../use-color-palette';

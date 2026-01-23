@@ -4,7 +4,7 @@ import type {
   ColorPalette,
   SelectFieldClassNames,
   SelectFieldIds,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 
 export type SelectInputOption = {
   label: string;

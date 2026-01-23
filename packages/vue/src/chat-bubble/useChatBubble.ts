@@ -1,4 +1,4 @@
-import { chatBubbleSlots } from '@kedata-ui/slots';
+import { chatBubbleSlots } from '@kedataindo/slots';
 import { computed, type HTMLAttributes } from 'vue';
 import type { ChatBubbleProps } from './index.types';
 

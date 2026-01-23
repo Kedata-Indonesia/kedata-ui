@@ -1,5 +1,5 @@
 import { useColorPalette } from "../use-color-palette";
-import { checkboxSlots } from "@kedata-ui/slots";
+import { checkboxSlots } from "@kedataindo/slots";
 import * as checkbox from "@zag-js/checkbox";
 import { normalizeProps, useMachine } from "@zag-js/vue";
 import {

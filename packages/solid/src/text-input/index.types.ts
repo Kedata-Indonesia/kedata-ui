@@ -4,7 +4,7 @@ import type {
   ColorPalette,
   TextInputClassNames,
   TextInputIds,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { ComponentProps, Ref } from 'solid-js';
 
 export type TextInputBaseProps = WithInputProps &

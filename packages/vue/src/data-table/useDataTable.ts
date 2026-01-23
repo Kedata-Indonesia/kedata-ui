@@ -1,7 +1,7 @@
 import useDataTableStore from "./useDataTableStore";
 import type { DataTableModels, DataTableProps } from "./index.types";
 import { computed, type HTMLAttributes, type TableHTMLAttributes } from "vue";
-import { dataTableSlots, tw } from "@kedata-ui/slots";
+import { dataTableSlots, tw } from "@kedataindo/slots";
 
 const useDataTable = (props: DataTableProps, models: DataTableModels) => {
   const tableState = useDataTableStore({

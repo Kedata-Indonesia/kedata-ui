@@ -1,4 +1,4 @@
-import type { ColorPalette, SwalAlertClassNames } from "@kedata-ui/slots";
+import type { ColorPalette, SwalAlertClassNames } from "@kedataindo/slots";
 import type { SweetAlertResult } from "sweetalert2";
 import type { DefineComponent, HTMLAttributes, VNode } from "vue";
 

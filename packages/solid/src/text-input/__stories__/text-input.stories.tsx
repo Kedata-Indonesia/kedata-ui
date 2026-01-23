@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from 'storybook-solidjs';
 import TextField from '../text-input';
-import { KiSearchOutline } from '@kedata-ui/solid-icons';
+import { KiSearchOutline } from '@kedataindo/solid-icons';
 
 const Default: StoryObj<typeof TextField> = {
   args: {

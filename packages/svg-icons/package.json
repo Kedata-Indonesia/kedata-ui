@@ -1,13 +1,13 @@
 {
-  "name": "@kedata-ui/svg-icons",
-  "version": "0.3.2",
+  "name": "@kedataindo/svg-icons",
+  "version": "0.4.0",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
-    "url": "https://github.com/kedata-software/kedata-ui"
+    "url": "https://github.com/Kedata-Indonesia/kedata-ui"
   },
   "files": [
     "src"

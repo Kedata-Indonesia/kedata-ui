@@ -6,7 +6,7 @@ import type {
   DialogFooterClassNames,
   DialogHeaderClassNames,
   DialogPosition,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 
 export type DialogContextValue = CreateDialogStoreReturn & {
   position: DialogPosition;

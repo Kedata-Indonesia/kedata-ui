@@ -1,4 +1,4 @@
-import type { ColorPalette } from '@kedata-ui/slots';
+import type { ColorPalette } from '@kedataindo/slots';
 import type { ModelRef } from 'vue';
 import type { WithInputProps } from '../input';
 

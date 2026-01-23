@@ -3,7 +3,7 @@ import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
 import { createControlledSignal } from '../create-controlled-signal';
-import { paginationSlots } from '@kedata-ui/slots/pagination';
+import { paginationSlots } from '@kedataindo/slots/pagination';
 import * as pagination from '@zag-js/pagination';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import clsx from 'clsx';

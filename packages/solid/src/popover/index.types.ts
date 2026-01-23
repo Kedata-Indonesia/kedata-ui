@@ -1,4 +1,4 @@
-import type { PopoverClassNames } from '@kedata-ui/slots';
+import type { PopoverClassNames } from '@kedataindo/slots';
 import { Placement } from '@zag-js/popover';
 import type { Component } from 'solid-js';
 

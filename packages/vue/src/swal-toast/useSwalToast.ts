@@ -1,13 +1,13 @@
 import Swal from 'sweetalert2';
 import type { SwalToastProps } from './index.types';
-import { tw } from '@kedata-ui/slots';
+import { tw } from '@kedataindo/slots';
 import { createApp, h } from 'vue';
 import SwalToast from './SwalToast.vue';
 import {
   KiCheckCircleSolid,
   KiExclamationSolid,
   KiInfoCircleSolid,
-} from '@kedata-ui/vue-icons';
+} from '@kedataindo/vue-icons';
 
 const SwalToastMethods = {
   fire(props: SwalToastProps) {

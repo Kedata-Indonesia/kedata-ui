@@ -1,4 +1,4 @@
-import type { ColorPalette } from "@kedata-ui/slots";
+import type { ColorPalette } from "@kedataindo/slots";
 
 export type FeedbackPreset = "success" | "error" | "warning";
 

@@ -1,4 +1,4 @@
-import { colorPickerSlots, tw } from "@kedata-ui/slots";
+import { colorPickerSlots, tw } from "@kedataindo/slots";
 import * as colorPicker from "@zag-js/color-picker";
 import { normalizeProps, useMachine } from "@zag-js/vue";
 import { computed, useId, type HTMLAttributes } from "vue";

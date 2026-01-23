@@ -1,4 +1,4 @@
-import type { LabelClassNames, LabelIds } from '@kedata-ui/slots';
+import type { LabelClassNames, LabelIds } from '@kedataindo/slots';
 import type { ComponentProps } from 'solid-js';
 
 export type WithLabelProps = {

@@ -1,4 +1,4 @@
-import type { BadgeVariant, ColorPalette } from "@kedata-ui/slots";
+import type { BadgeVariant, ColorPalette } from "@kedataindo/slots";
 
 export type BadgeProps = {
   class?: string;

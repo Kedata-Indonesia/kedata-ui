@@ -35,7 +35,7 @@ import type {
   ErrorMessageClassNames,
   PinInputClassNames,
   DatePickerClassNames,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 
 export type ClassNamesContextValue = {
   Avatar?: AvatarClassNames;

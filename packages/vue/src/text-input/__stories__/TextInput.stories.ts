@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 import TextField from '../TextInput.vue';
-import { KiSearchOutline } from '@kedata-ui/vue-icons';
+import { KiSearchOutline } from '@kedataindo/vue-icons';
 import { h } from 'vue';
 
 const Default: StoryObj<typeof TextField> = {

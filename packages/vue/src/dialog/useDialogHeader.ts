@@ -1,4 +1,4 @@
-import { dialogHeaderSlots, tw } from "@kedata-ui/slots";
+import { dialogHeaderSlots, tw } from "@kedataindo/slots";
 import { computed, inject, type HTMLAttributes } from "vue";
 import { DialogContextKey } from "./DialogContext";
 import type { DialogContextValue, DialogHeaderProps } from "./index.types";

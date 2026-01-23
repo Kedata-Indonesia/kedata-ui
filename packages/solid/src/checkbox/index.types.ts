@@ -4,7 +4,7 @@ import type {
   CheckboxClassNames,
   CheckboxIds,
   ColorPalette,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 
 export type CheckboxBaseProps = WithFieldProps & {
   id?: string;

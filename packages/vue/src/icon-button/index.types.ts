@@ -3,7 +3,7 @@ import type {
   ButtonVariant,
   ColorPalette,
   IconButtonClassNames,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { ButtonHTMLAttributes } from 'vue';
 
 export type IconButtonProps = {

@@ -4,7 +4,7 @@ import type {
   ColorPalette,
   TextareaInputClassNames,
   TextareaInputIds,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 
 export type TextareaInputBaseProps = {
   /**

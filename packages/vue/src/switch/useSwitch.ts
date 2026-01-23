@@ -1,6 +1,6 @@
 import { useColorPalette } from "../use-color-palette";
 import { dataAttrBoolean } from "@kedata-software/toolkit-js";
-import { switchSlots, tw } from "@kedata-ui/slots";
+import { switchSlots, tw } from "@kedataindo/slots";
 import * as zagSwitch from "@zag-js/switch";
 import { normalizeProps, useMachine } from "@zag-js/vue";
 import {

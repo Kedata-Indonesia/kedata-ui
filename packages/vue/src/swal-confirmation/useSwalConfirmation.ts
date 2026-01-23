@@ -1,4 +1,4 @@
-import { tw, type ColorPalette } from '@kedata-ui/slots';
+import { tw, type ColorPalette } from '@kedataindo/slots';
 import Swal from 'sweetalert2';
 import { createApp, h } from 'vue';
 import type { SwalConfirmationFireProps } from './index.types';

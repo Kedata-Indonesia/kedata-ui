@@ -1,7 +1,7 @@
 import type { SwalAlertFireProps } from "./index.types";
 import SwalAlert from "./SwalAlert.vue";
 import Swal from "sweetalert2";
-import { tw } from "@kedata-ui/slots";
+import { tw } from "@kedataindo/slots";
 import { createApp, h } from "vue";
 
 const SwalAlertMethods = {

@@ -1,4 +1,4 @@
-import tw from '@kedata-ui/slots/tw';
+import tw from '@kedataindo/slots/tw';
 import clsx from 'clsx';
 import { render } from 'solid-js/web';
 import Swal from 'sweetalert2';

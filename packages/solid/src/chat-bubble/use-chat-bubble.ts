@@ -1,7 +1,7 @@
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { chatBubbleSlots } from '@kedata-ui/slots/chat-bubble';
+import { chatBubbleSlots } from '@kedataindo/slots/chat-bubble';
 import clsx from 'clsx';
 import type { ChatBubbleProps } from './index.types';
 import type { PropsGetterParams } from '../types';

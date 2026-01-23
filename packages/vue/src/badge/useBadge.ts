@@ -1,4 +1,4 @@
-import { badgeSlots } from '@kedata-ui/slots';
+import { badgeSlots } from '@kedataindo/slots';
 import { computed, type HTMLAttributes } from 'vue';
 import type { BadgeProps } from './index.types';
 import { useColorPalette } from '../use-color-palette';

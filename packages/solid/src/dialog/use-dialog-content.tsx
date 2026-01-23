@@ -2,7 +2,7 @@ import { useDialogContext } from './dialog-context';
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { dialogContentSlots } from '@kedata-ui/slots/dialog-content';
+import { dialogContentSlots } from '@kedataindo/slots/dialog-content';
 import clsx from 'clsx';
 import type { DialogContentProps } from './index.types';
 import {

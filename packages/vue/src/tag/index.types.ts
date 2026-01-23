@@ -1,4 +1,4 @@
-import type { ColorPalette, TagVariant } from "@kedata-ui/slots";
+import type { ColorPalette, TagVariant } from "@kedataindo/slots";
 
 export type TagProps = {
   colorPalette?: ColorPalette;

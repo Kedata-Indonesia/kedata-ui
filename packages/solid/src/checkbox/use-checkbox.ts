@@ -3,7 +3,7 @@ import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
 import { createControlledSignal } from '../create-controlled-signal';
-import { checkboxSlots } from '@kedata-ui/slots/checkbox';
+import { checkboxSlots } from '@kedataindo/slots/checkbox';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
 import * as checkbox from '@zag-js/checkbox';
 import { normalizeProps, useMachine } from '@zag-js/solid';

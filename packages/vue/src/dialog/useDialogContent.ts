@@ -1,5 +1,5 @@
 import { dataAttrBoolean } from "@kedata-software/toolkit-js";
-import { dialogContentSlots, tw } from "@kedata-ui/slots";
+import { dialogContentSlots, tw } from "@kedataindo/slots";
 import { computed, type HTMLAttributes } from "vue";
 import type { DialogContentProps } from "./index.types";
 

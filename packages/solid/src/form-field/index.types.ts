@@ -4,7 +4,7 @@ import type {
   FormFieldClassNames,
   FormFieldIds,
   FormFieldLabelPlacement,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { WithErrorMessageProps } from '../error-message';
 
 export type FormFieldBaseProps = {

@@ -6,7 +6,7 @@ import createAnimateState, {
 import { useColorPalette } from '../use-color-palette';
 import { createControlledSignal } from '../create-controlled-signal';
 import { createDialogHolder } from '../create-dialog-holder';
-import { selectInputSlots } from '@kedata-ui/slots/select-input';
+import { selectInputSlots } from '@kedataindo/slots/select-input';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
 import * as popover from '@zag-js/popover';
 import { normalizeProps, useMachine } from '@zag-js/solid';

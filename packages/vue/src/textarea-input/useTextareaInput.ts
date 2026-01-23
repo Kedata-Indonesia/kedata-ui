@@ -1,7 +1,7 @@
 import { computed, type HTMLAttributes, type TextareaHTMLAttributes } from "vue";
 import type { TextareaInputModels, TextareaInputProps } from "./index.types";
 import { useColorPalette } from "../use-color-palette";
-import { textareaInputSlots, tw } from "@kedata-ui/slots";
+import { textareaInputSlots, tw } from "@kedataindo/slots";
 import { dataAttrBoolean } from "@kedata-software/toolkit-js";
 import clsx from "clsx";
 

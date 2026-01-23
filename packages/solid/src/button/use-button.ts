@@ -3,7 +3,7 @@ import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
-import { buttonSlots } from '@kedata-ui/slots/button';
+import { buttonSlots } from '@kedataindo/slots/button';
 import clsx from 'clsx';
 import {
   createMemo,

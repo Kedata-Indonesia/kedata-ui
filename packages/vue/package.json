@@ -1,13 +1,13 @@
 {
-  "name": "@kedata-ui/vue",
-  "version": "0.3.2",
+  "name": "@kedataindo/vue",
+  "version": "0.4.0",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
-    "url": "https://github.com/kedata-software/kedata-ui"
+    "url": "https://github.com/Kedata-Indonesia/kedata-ui"
   },
   "scripts": {
     "build": "vite build && vue-tsc --emitDeclarationOnly --project tsconfig.build.json && mv dist/packages/vue/src/* dist",
@@ -24,9 +24,9 @@
     "dist"
   ],
   "dependencies": {
-    "@kedata-ui/slots": "0.3.2",
-    "@kedata-ui/tailwind": "0.3.2",
-    "@kedata-ui/vue-icons": "0.3.2",
+    "@kedataindo/slots": "0.4.0",
+    "@kedataindo/tailwind": "0.4.0",
+    "@kedataindo/vue-icons": "0.4.0",
     "@zag-js/avatar": "1.3.2",
     "@zag-js/checkbox": "1.3.2",
     "@zag-js/color-picker": "1.3.2",

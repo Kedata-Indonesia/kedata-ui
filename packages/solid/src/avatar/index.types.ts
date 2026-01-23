@@ -2,7 +2,7 @@ import type {
   AvatarClassNames,
   AvatarIds,
   ColorPalette,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { ComponentProps } from 'solid-js';
 
 export type AvatarBaseProps = {

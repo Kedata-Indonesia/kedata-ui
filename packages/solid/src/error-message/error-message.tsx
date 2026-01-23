@@ -2,7 +2,7 @@ import { useBaseProps } from "../base-props";
 import { useClassNames } from "../class-names";
 import { useTwMerge } from "../tw-merge";
 import { useColorPalette } from "../use-color-palette";
-import { errorMessageSlots } from "@kedata-ui/slots/error-message";
+import { errorMessageSlots } from "@kedataindo/slots/error-message";
 import clsx from "clsx";
 import type { ErrorMessageProps } from "./index.types";
 import { createMemo, splitProps, type Component } from "solid-js";

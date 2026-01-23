@@ -2,7 +2,7 @@ import createDataTableStore from './create-data-table-store';
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { dataTableSlots } from '@kedata-ui/slots/data-table';
+import { dataTableSlots } from '@kedataindo/slots/data-table';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
 import clsx from 'clsx';
 import { createMemo, type ComponentProps, type ValidComponent } from 'solid-js';

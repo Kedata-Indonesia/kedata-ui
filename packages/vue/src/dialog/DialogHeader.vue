@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import useDialogHeader from "./useDialogHeader";
-import { KiCloseSolid } from "@kedata-ui/vue-icons";
+import { KiCloseSolid } from "@kedataindo/vue-icons";
 import type { DialogHeaderProps } from "./index.types";
 
 defineOptions({

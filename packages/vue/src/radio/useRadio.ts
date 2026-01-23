@@ -1,6 +1,6 @@
 import { computed, type HTMLAttributes, type InputHTMLAttributes } from "vue";
 import type { RadioModels, RadioProps } from "./index.types";
-import { radioSlots, tw } from "@kedata-ui/slots";
+import { radioSlots, tw } from "@kedataindo/slots";
 import { dataAttrBoolean } from "@kedata-software/toolkit-js";
 import { useColorPalette } from "../use-color-palette";
 

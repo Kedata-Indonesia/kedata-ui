@@ -2,7 +2,7 @@ import {
   KiCheckCircleSolid,
   KiExclamationSolid,
   KiInfoCircleSolid,
-} from '@kedata-ui/solid-icons';
+} from '@kedataindo/solid-icons';
 import type { SwalToastFireProps } from './index.types';
 import SwalToast from './swal-toast';
 

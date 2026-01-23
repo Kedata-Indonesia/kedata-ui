@@ -1,4 +1,4 @@
-import type { ColorPickerClassNames } from '@kedata-ui/slots';
+import type { ColorPickerClassNames } from '@kedataindo/slots';
 import type { ComponentProps } from 'solid-js';
 
 export type ColorPickerBaseProps = {

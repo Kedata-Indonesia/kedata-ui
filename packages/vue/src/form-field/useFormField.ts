@@ -1,6 +1,6 @@
 import { computed, inject, type HTMLAttributes } from "vue";
 import type { FormFieldProps } from "./index.types";
-import { formFieldSlots, tw } from "@kedata-ui/slots";
+import { formFieldSlots, tw } from "@kedataindo/slots";
 import { FormContextKey } from "../form";
 import { dataAttrBoolean } from "@kedata-software/toolkit-js";
 

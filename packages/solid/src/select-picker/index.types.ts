@@ -1,4 +1,4 @@
-import type { SelectPickerClassNames } from '@kedata-ui/slots';
+import type { SelectPickerClassNames } from '@kedataindo/slots';
 import type { Component, ComponentProps } from 'solid-js';
 
 export type SelectPickerOption = {

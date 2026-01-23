@@ -1,6 +1,6 @@
 import type { ModelRef } from 'vue';
 import type { WithFieldProps } from '../types';
-import type { ColorInputClassNames, ColorPalette } from '@kedata-ui/slots';
+import type { ColorInputClassNames, ColorPalette } from '@kedataindo/slots';
 
 export type ColorInputBaseProps = WithFieldProps & {
   classNames?: ColorInputClassNames;

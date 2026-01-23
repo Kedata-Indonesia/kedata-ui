@@ -1,7 +1,7 @@
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { menuSlots } from '@kedata-ui/slots/menu';
+import { menuSlots } from '@kedataindo/slots/menu';
 import clsx from 'clsx';
 import type { MenuItemOption, MenuProps } from './index.types';
 import type { PropsGetterParams } from '../types';

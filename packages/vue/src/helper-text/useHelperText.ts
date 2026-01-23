@@ -1,4 +1,4 @@
-import { helperTextSlots, tw } from "@kedata-ui/slots";
+import { helperTextSlots, tw } from "@kedataindo/slots";
 import { computed, type HTMLAttributes } from "vue";
 import type { HelperTextProps } from "./index.types";
 

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 import DataTable from '../DataTable.vue';
 import { IconButton } from '../../icon-button';
-import { KiDotsVerticalSolid } from '@kedata-ui/vue-icons';
+import { KiDotsVerticalSolid } from '@kedataindo/vue-icons';
 import { Menu } from '../../menu';
 import { h } from 'vue';
 

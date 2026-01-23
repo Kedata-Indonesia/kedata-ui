@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from 'storybook-solidjs';
 import Menu from '../menu';
 import { Button } from '../../button';
-import { KiCheckOutline } from '@kedata-ui/solid-icons';
+import { KiCheckOutline } from '@kedataindo/solid-icons';
 
 const Base: StoryObj<typeof Menu> = {
   args: {

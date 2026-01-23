@@ -1,7 +1,7 @@
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { colorPickerSlots } from '@kedata-ui/slots/color-picker';
+import { colorPickerSlots } from '@kedataindo/slots/color-picker';
 import { omitProps } from '@kedata-software/toolkit-js';
 import * as colorPicker from '@zag-js/color-picker';
 import { normalizeProps, useMachine } from '@zag-js/solid';

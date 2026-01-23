@@ -2,7 +2,7 @@ import Button from '../button';
 import { ButtonProps } from '../index.types';
 import type { Meta, StoryObj } from 'storybook-solidjs';
 import { type ComponentProps } from 'solid-js';
-import { KiAnnotationOutline } from '@kedata-ui/solid-icons';
+import { KiAnnotationOutline } from '@kedataindo/solid-icons';
 
 const meta: Meta<ComponentProps<typeof Button>> = {
   title: 'Action/Button',

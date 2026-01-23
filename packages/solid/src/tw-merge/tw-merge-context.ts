@@ -1,4 +1,4 @@
-import tw from '@kedata-ui/slots/tw';
+import tw from '@kedataindo/slots/tw';
 import { createContext } from 'solid-js';
 import type { ClassNameValue } from 'tailwind-merge';
 

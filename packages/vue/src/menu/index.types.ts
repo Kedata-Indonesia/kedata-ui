@@ -1,4 +1,4 @@
-import type { ColorPalette } from '@kedata-ui/slots';
+import type { ColorPalette } from '@kedataindo/slots';
 import type { Component, ModelRef, VNode } from 'vue';
 
 export type MenuProps = {

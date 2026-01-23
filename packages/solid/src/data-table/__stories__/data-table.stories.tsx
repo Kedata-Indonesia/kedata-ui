@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from 'storybook-solidjs';
 import DataTable from '../data-table';
 import { IconButton } from '../../icon-button';
-import { KiDotsVerticalSolid } from '@kedata-ui/solid-icons';
+import { KiDotsVerticalSolid } from '@kedataindo/solid-icons';
 import { Menu } from '../../menu';
 
 const meta: Meta<typeof DataTable> = {

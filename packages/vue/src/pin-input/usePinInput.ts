@@ -1,11 +1,11 @@
 import { useColorPalette } from '../use-color-palette';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
-import { pinInputSlots } from '@kedata-ui/slots/pin-input';
+import { pinInputSlots } from '@kedataindo/slots/pin-input';
 import * as pinInput from '@zag-js/pin-input';
 import { normalizeProps, useMachine } from '@zag-js/vue';
 import type { PinInputModels, PinInputProps } from './index.types';
 import type { PropsGetterParams } from '../types';
-import { tw } from '@kedata-ui/slots';
+import { tw } from '@kedataindo/slots';
 import { computed, useId } from 'vue';
 
 const usePinInput = (props: PinInputProps, models: PinInputModels) => {

@@ -2,7 +2,7 @@ import { useMachine, normalizeProps } from '@zag-js/vue';
 import * as menu from '@zag-js/menu';
 import type { MenuItemOption, UseMenuParams } from './index.types';
 import { computed, onMounted, provide, useId, type HTMLAttributes } from 'vue';
-import { menuSlots, tw } from '@kedata-ui/slots';
+import { menuSlots, tw } from '@kedataindo/slots';
 import clsx from 'clsx';
 import MenuContextKey from './MenuContext';
 

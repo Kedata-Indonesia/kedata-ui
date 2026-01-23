@@ -1,6 +1,6 @@
 import IconButton from '../IconButton.vue';
 import type { Meta, StoryObj } from '@storybook/vue3';
-import { KiSearchSolid } from '@kedata-ui/vue-icons';
+import { KiSearchSolid } from '@kedataindo/vue-icons';
 import { h } from 'vue';
 
 const Base: StoryObj<typeof IconButton> = {

@@ -17,15 +17,15 @@ const config: StorybookConfig = {
     return mergeConfig(config, {
       resolve: {
         alias: {
-          '@kedata-ui/slots': join(
+          '@kedataindo/slots': join(
             __dirname,
             '..',
             '..',
             'slots',
             'src',
           ),
-          '@kedata-ui/toolkit': join(__dirname, '..', '..', 'toolkit', 'src'),
-          '@kedata-ui/solid-icons': join(
+          '@kedataindo/toolkit': join(__dirname, '..', '..', 'toolkit', 'src'),
+          '@kedataindo/solid-icons': join(
             __dirname,
             '..',
             '..',

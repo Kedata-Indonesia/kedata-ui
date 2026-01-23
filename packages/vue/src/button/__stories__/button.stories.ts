@@ -1,7 +1,7 @@
 import Button from '../Button.vue';
 import type { ButtonProps } from '../index.types';
 import type { Meta, StoryObj } from '@storybook/vue3';
-import { KiAnnotationOutline } from '@kedata-ui/vue-icons';
+import { KiAnnotationOutline } from '@kedataindo/vue-icons';
 import { h } from 'vue';
 
 const meta: Meta<typeof Button> = {

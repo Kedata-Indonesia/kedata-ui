@@ -1,7 +1,7 @@
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { helperTextSlots } from '@kedata-ui/slots/helper-text';
+import { helperTextSlots } from '@kedataindo/slots/helper-text';
 import {
   createMemo,
   mergeProps,

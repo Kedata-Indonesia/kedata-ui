@@ -2,7 +2,7 @@ import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { createControlledSignal } from '../create-controlled-signal';
-import { radioGroupSlots } from '@kedata-ui/slots/radio-group';
+import { radioGroupSlots } from '@kedataindo/slots/radio-group';
 import * as radio from '@zag-js/radio-group';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import clsx from 'clsx';

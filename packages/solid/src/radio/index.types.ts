@@ -1,5 +1,5 @@
 import type { TestableProps } from '../types';
-import type { ColorPalette, RadioClassNames, RadioIds } from '@kedata-ui/slots';
+import type { ColorPalette, RadioClassNames, RadioIds } from '@kedataindo/slots';
 import type { ComponentProps, JSX } from 'solid-js';
 
 export type RadioBaseProps = TestableProps & {

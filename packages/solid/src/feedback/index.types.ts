@@ -4,7 +4,7 @@ import type {
   ColorPalette,
   FeedbackClassNames,
   FeedbackIds,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 
 export type FeedbackPreset = 'success' | 'error' | 'warning';
 

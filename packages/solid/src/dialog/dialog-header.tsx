@@ -1,5 +1,5 @@
 import useDialogHeader from './use-dialog-header';
-import { KiCloseSolid } from '@kedata-ui/solid-icons';
+import { KiCloseSolid } from '@kedataindo/solid-icons';
 import type { DialogHeaderProps } from './index.types';
 import type { Component } from 'solid-js';
 

@@ -2,7 +2,7 @@ import { LabelProps } from './index.types';
 import { useBaseProps } from '../base-props';
 import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
-import { labelSlots } from '@kedata-ui/slots/label';
+import { labelSlots } from '@kedataindo/slots/label';
 import clsx from 'clsx';
 import {
   createMemo,

@@ -3,7 +3,7 @@ import { useClassNames } from '../class-names';
 import { useTwMerge } from '../tw-merge';
 import { useColorPalette } from '../use-color-palette';
 import { createControlledSignal } from '../create-controlled-signal';
-import { switchSlots } from '@kedata-ui/slots/switch';
+import { switchSlots } from '@kedataindo/slots/switch';
 import { dataAttrBoolean } from '@kedata-software/toolkit-js';
 import { normalizeProps, useMachine } from '@zag-js/solid';
 import * as zagSwitch from '@zag-js/switch';

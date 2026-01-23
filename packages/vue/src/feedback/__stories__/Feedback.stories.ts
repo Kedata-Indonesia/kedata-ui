@@ -1,6 +1,6 @@
 import Feedback from '../Feedback.vue';
 import type { Meta, StoryObj } from '@storybook/vue3';
-import { KiExclamationSolid } from '@kedata-ui/vue-icons';
+import { KiExclamationSolid } from '@kedataindo/vue-icons';
 import { h } from 'vue';
 
 const Base: StoryObj<typeof Feedback> = {

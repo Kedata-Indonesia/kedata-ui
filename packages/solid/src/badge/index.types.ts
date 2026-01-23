@@ -2,7 +2,7 @@ import type {
   BadgeClassNames,
   BadgeVariant,
   ColorPalette,
-} from '@kedata-ui/slots';
+} from '@kedataindo/slots';
 import type { ComponentProps, JSXElement } from 'solid-js';
 
 export type BadgeBaseProps = {

@@ -1,7 +1,7 @@
 import type {
   ColorPalette,
   SwalConfirmationClassNames,
-} from "@kedata-ui/slots";
+} from "@kedataindo/slots";
 import type { SweetAlertResult } from "sweetalert2";
 import type { HTMLAttributes, VNode } from "vue";
 
