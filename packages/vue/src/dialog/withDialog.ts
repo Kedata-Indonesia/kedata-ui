@@ -61,7 +61,7 @@ const withDialog = (DialogComponent: any) => {
         return {
           ...api.value.getBackdropProps(),
           hidden: undefined,
-          class: 'bg-black/50 absolute inset-0 opacity-0',
+          class: 'bg-black/50 absolute inset-0 opacity-0 transition-opacity z-10',
         } as HTMLAttributes;
       };
 
@@ -69,7 +69,7 @@ const withDialog = (DialogComponent: any) => {
         return {
           ...api.value.getPositionerProps(),
           class:
-            'fixed w-full top-0 left-1/2 h-full overflow-hidden -translate-x-1/2 transition-[opacity,top]',
+            'fixed w-full top-0 left-1/2 h-full overflow-hidden -translate-x-1/2 transition-[opacity,top] z-10',
           style: {
             '--tw-translate-x': '-50.1%',
           },
