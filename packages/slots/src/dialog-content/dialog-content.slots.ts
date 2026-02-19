@@ -12,6 +12,11 @@ const dialogContentSlots = tv(
         true: dialogContentParts,
       },
       position: {
+        center: {
+          root: clsx(
+            'max-h-[calc(100vh)] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
+          ),
+        },
         'top-center': {
           root: clsx('max-h-[calc(100vh)] left-1/2 -translate-x-1/2 pt-12'),
         },
@@ -29,7 +34,7 @@ const dialogContentSlots = tv(
     },
     defaultVariants: {
       withParts: true,
-      position: 'top-center',
+      position: 'center',
     },
   },
   { twMerge: false },
