@@ -5,7 +5,7 @@ import menuParts from './menu.parts';
 const menuSlots = tv({
   slots: {
     root: clsx(''),
-    positioner: '',
+    positioner: clsx('!z-50'),
     content: clsx(
       'border border-dark-300 rounded-lg py-2.5 bg-white',
       'focus-visible:outline-none',

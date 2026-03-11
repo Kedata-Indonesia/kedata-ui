@@ -5,9 +5,9 @@ import { tv } from 'tailwind-variants';
 const tooltipSlots = tv({
   slots: {
     root: clsx(''),
-    content: clsx('bg-dark-700 text-white p-4 py-2 rounded-md text-sm block'),
+    content: clsx('relative bg-dark-700 text-white p-4 py-2 rounded-md text-sm block'),
     arrow: '',
-    positioner: '',
+    positioner: clsx('!z-50'),
     arrowTip: clsx('!bg-dark-700'),
   },
   variants: {

@@ -28,13 +28,13 @@ const inputSlots = tv(
         'ml-4 size-4 flex-shrink-0',
         'group-data-[invalid]:text-inherit',
         'group-focus-within:text-palette-500 group-data-[filled]:text-dark-900',
-        'dark:group-focus-within:text-white',
+        'dark:group-focus-within:text-white dark:group-data-[filled]:text-dark-50',
       ),
       endIcon: clsx(
         'ml-auto mr-4 size-4 flex-shrink-0',
         'group-data-[invalid]:text-inherit',
         'group-focus-within:text-palette-500 group-data-[filled]:text-dark-900',
-        'dark:group-focus-within:text-white',
+        'dark:group-focus-within:text-white dark:group-data-[filled]:text-dark-50',
       ),
     },
     variants: {

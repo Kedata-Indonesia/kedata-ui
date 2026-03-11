@@ -8,7 +8,7 @@ const textInputSlots = tv(
     slots: {
       root: clsx(inputSlots.slots.root, 'group/text-input'),
       input:
-        'w-full px-3 text-black focus:outline-none bg-transparent group-[disabled]:cursor-not-allowed h-full',
+        'w-full px-3 text-black focus:outline-none bg-transparent group-[disabled]:cursor-not-allowed h-full dark:text-white',
       startIcon: inputSlots.slots.startIcon,
       endIcon: inputSlots.slots.endIcon,
       startAddon: inputSlots.slots.startAddon,

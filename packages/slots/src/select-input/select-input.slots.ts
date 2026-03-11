@@ -21,8 +21,9 @@ const selectInputSlots = tv(
         'flex flex-row gap-2 px-3 text-black flex-wrap my-2',
         'group-data-[has-placeholder]:text-gray-400',
         'text-left',
+        'dark:text-white dark:group-data-[has-placeholder]:text-dark-400',
       ),
-      positioner: '',
+      positioner: clsx('!z-50'),
 
       Tag: '',
     },

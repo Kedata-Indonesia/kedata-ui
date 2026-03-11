@@ -12,7 +12,7 @@ const colorInputSlots = tv(
         'bg-[--color-input-value] size-4 rounded-full ml-3 border border-dark-300',
       value: 'bg-dark-50',
       hiddenInput: '',
-      positioner: '',
+      positioner: clsx('!z-50'),
 
       ColorInput: 'border border-dark-300 rounded-lg w-[400px]',
     },

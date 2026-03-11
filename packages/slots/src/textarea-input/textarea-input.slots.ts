@@ -6,12 +6,14 @@ const textareaInputSlots = tv({
   slots: {
     root: clsx('group flex flex-col'),
     input: clsx(
-      'rounded-lg bg-dark-50 border border-gray-300 w-full',
+      'rounded-lg bg-dark-50 border border-gray-300 w-full text-black',
       'focus-within:border-palette-500 focus-within:outline-none',
       'py-2 px-3 min-h-12',
       'focus:border-palette-500 focus:outline-none',
       'data-[invalid]:focus-within:!border-palette-500 data-[invalid]:!border-danger-500',
       'group-data-[disabled]:bg-dark-200 group-data-[disabled]:cursor-not-allowed',
+      'dark:bg-dark-800 dark:border-dark-600 dark:text-white dark:focus:border-palette-500',
+      'dark:group-data-[disabled]:bg-dark-700',
     ),
     counter: 'text-sm text-gray-400 ml-auto mt-1',
   },

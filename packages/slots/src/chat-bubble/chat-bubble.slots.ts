@@ -20,7 +20,7 @@ const chatBubbleSlots = tv({
       },
       answer: {
         root: 'mr-auto',
-        bubble: 'bg-palette-50 rounded-tl-none text-dark-900',
+        bubble: 'bg-palette-50 rounded-tl-none text-dark-900 dark:bg-dark-700 dark:text-dark-50',
         time: 'ml-auto',
       },
     },
