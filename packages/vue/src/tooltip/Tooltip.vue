@@ -25,11 +25,10 @@ const api = useTooltip(props, { open });
     :leave-to-class="animateStatePreset.fadeUp['leave-to']"
   >
     <div v-if="open" v-bind="api.getPositionerProps()">
-      <div v-bind="api.getArrowProps()">
-        <div v-bind="api.getArrowTipProps()" />
-      </div>
-
       <div v-bind="api.getContentProps()">
+        <div v-bind="api.getArrowProps()">
+          <div v-bind="api.getArrowTipProps()" />
+        </div>
         <slot name="content" :open="open" @close="open = false" />
       </div>
     </div>

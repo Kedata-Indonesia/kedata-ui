@@ -17,6 +17,9 @@ const useTooltip = (props: TooltipProps, models: TooltipModels) => {
           models.open.value = details.open;
         },
         openDelay: 0,
+        positioning: {
+          placement: props.placement ?? "top",
+        },
       };
     })
   );
@@ -34,9 +37,15 @@ const useTooltip = (props: TooltipProps, models: TooltipModels) => {
   };
 
   const getPositionerProps = () => {
+    const positionerApi = api.value.getPositionerProps();
     return {
-      ...api.value.getPositionerProps(),
+      ...positionerApi,
       class: slots.value.positioner(),
+      style: {
+        ...(positionerApi.style as Record<string, string>),
+        "--arrow-size": "8px",
+        "--arrow-background": "#334155",
+      },
     } as HTMLAttributes;
   };
 
