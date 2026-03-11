@@ -49,3 +49,17 @@ export * from './textarea-input';
 export * from './menu';
 
 export * from './pin-input';
+
+export * from './label';
+
+export * from './feedback';
+
+export * from './tag';
+
+export * from './error-message';
+
+export * from './helper-text';
+
+export { default as ColorInput } from './color-input/ColorInput.vue';
+
+export * from './color-input/index.types';

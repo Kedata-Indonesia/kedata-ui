@@ -39,6 +39,7 @@ const useCheckbox = (props: CheckboxProps, models: CheckboxModels) => {
       checked: checked.value,
       value: props.value,
       name: props.name,
+      disabled: props.disabled,
       onCheckedChange: ({ checked }) => {
         if (typeof checked === "boolean") {
           const checkedModel = models.checked.value;
