@@ -21,6 +21,7 @@ export default defineConfig({
         'vue',
         /^@zag-js\/*/,
         /^@kedata-ui\/*/,
+        /^@kedataindo\/*/,
         'tailwind-merge',
         'clsx',
         'sweetalert2',
