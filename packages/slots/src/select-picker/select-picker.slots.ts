@@ -7,12 +7,15 @@ const selectPickerSlots = tv(
     slots: {
       root: clsx(
         'rounded-lg border border-gray-300 bg-white py-2 color-palette-primary',
+        'dark:bg-dark-900 dark:border-dark-700 dark:text-white',
         'data-[with-search]:pt-0',
       ),
       item: clsx(
         'hover:bg-palette-50 cursor-pointer px-4 py-2',
         'data-[highlighted]:bg-palette-50',
         'aria-[selected=true]:bg-palette-50 aria-[selected=true]:text-palette-500',
+        'dark:hover:bg-dark-700 dark:data-[highlighted]:bg-dark-700',
+        'dark:aria-[selected=true]:bg-dark-700 dark:aria-[selected=true]:text-palette-400',
       ),
       itemText: '',
       itemGroup: '',
