@@ -10,6 +10,13 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Foundation', link: '/foundation/colors' },
+      {
+        text: 'Assets',
+        items: [
+          { text: 'Icon Collections', link: '/assets/icons/collections' },
+        ],
+      },
       { text: 'Components', link: '/components/button' },
     ],
     sidebar: [
@@ -17,6 +24,18 @@ export default defineConfig({
         text: 'Getting Started',
         items: [
           { text: 'Introduction', link: '/' },
+        ],
+      },
+      {
+        text: 'Foundation',
+        items: [
+          { text: 'Colors', link: '/foundation/colors' },
+        ],
+      },
+      {
+        text: 'Assets',
+        items: [
+          { text: 'Icon Collections', link: '/assets/icons/collections' },
         ],
       },
       {
