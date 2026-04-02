@@ -1,0 +1,10 @@
+node_modules
+**/node_modules
+**/.vitepress/cache
+**/.vitepress/dist
+**/dist
+.git
+.gitignore
+*.md
+!packages/docs/**/*.md
+!packages/docs/**/.vitepress/**
