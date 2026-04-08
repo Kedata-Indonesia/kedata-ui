@@ -1,7 +1,7 @@
 import * as pagination from "@zag-js/pagination";
 import { normalizeProps, useMachine } from "@zag-js/vue";
 import type { PaginationModels, PaginationProps } from "./index.types";
-import { computed, effect, type HTMLAttributes } from "vue";
+import { computed, type HTMLAttributes } from "vue";
 import { useColorPalette } from "../use-color-palette";
 import { paginationSlots, tw } from "@kedataindo/slots";
 
@@ -51,8 +51,8 @@ const usePagination = (props: PaginationProps, models: PaginationModels) => {
       class: tw(
         slots.value.prevTrigger({
           size: buttonSize.value,
-          variant: "solid",
-        })
+          variant: "outline",
+        }),
       ),
     } as HTMLAttributes;
   };
@@ -63,8 +63,8 @@ const usePagination = (props: PaginationProps, models: PaginationModels) => {
       class: tw(
         slots.value.nextTrigger({
           size: buttonSize.value,
-          variant: "solid",
-        })
+          variant: "outline",
+        }),
       ),
     } as HTMLAttributes;
   };

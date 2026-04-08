@@ -59,7 +59,7 @@ const buttonSlots = tv(
         },
         outline: {
           root: clsx(
-            'text-palette-500 border border-gray-300 bg-white',
+            'text-palette-500 border border-solid border-gray-300 bg-white',
             'disabled:text-palette-300 disabled:bg-palette-50',
             'hover:bg-palette-50',
             'focus-visible:outline-palette-300 focus-visible:outline-2 focus-visible:outline-offset-2',

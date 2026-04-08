@@ -19,7 +19,7 @@ const { size, activeVariant, inactiveVariant, pages, ...api } = usePagination(
 
 <template>
   <div v-bind="api.getRootProps()">
-    <button v-bind="api.getPrevTriggerProps()">Prev</button>
+    <Button v-bind="api.getPrevTriggerProps()">Prev</Button>
     <template v-for="(item, index) in pages">
       <Button
         v-if="item.type === 'ellipsis'"
@@ -34,10 +34,11 @@ const { size, activeVariant, inactiveVariant, pages, ...api } = usePagination(
         v-bind="api.getItemProps(item)"
         :size="size"
         :variant="item.value === page ? activeVariant : inactiveVariant"
+        :class="item.value !== page ? '!border-solid' : ''"
       >
         {{ item.value }}
       </Button>
     </template>
-    <button v-bind="api.getNextTriggerProps()">Next</button>
+    <Button v-bind="api.getNextTriggerProps()">Next</Button>
   </div>
 </template>
