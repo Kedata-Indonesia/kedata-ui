@@ -40,7 +40,7 @@ const useMenu = (params: UseMenuParams) => {
   const childServices = computed(() => {
     return options.value
       .map((option) => {
-        if (option.type !== 'item' || !option.options) {
+        if (option.type === 'separator' || !option.options) {
           return undefined;
         }
 
@@ -83,6 +83,7 @@ const useMenu = (params: UseMenuParams) => {
     slots,
     mapValueSelect: props.mapValueSelect,
     emits,
+    menuClassNames: computed(() => props.classNames),
   });
 
   const getTriggerProps = () => {
@@ -96,42 +97,70 @@ const useMenu = (params: UseMenuParams) => {
     return {
       ...menuApi.value.getContentProps(),
       hidden: false,
-      class: tw(slots.value.content()),
+      class: tw(
+        clsx('light', slots.value.content(), props.classNames?.content),
+      ),
     } as HTMLAttributes;
   };
 
   const getPositionerProps = () => {
     return {
       ...menuApi.value.getPositionerProps(),
-      class: tw(slots.value.positioner(), '!z-10'),
+      class: tw(clsx(slots.value.positioner(), props.classNames?.positioner)),
     } as HTMLAttributes;
   };
 
   const getSeparatorProps = () => {
     return {
       ...menuApi.value.getSeparatorProps(),
-      class: tw(slots.value.separator()),
+      class: tw(clsx(slots.value.separator(), props.classNames?.separator)),
     } as HTMLAttributes;
   };
 
   const getTriggerItemProps = (api: any) => {
     return {
       ...menuApi.value.getTriggerItemProps(api),
-      class: tw(slots.value.item()),
+      class: tw(clsx(slots.value.item(), props.classNames?.item)),
     } as HTMLAttributes;
   };
 
   const getItemProps = (params: menu.ItemProps) => {
+    const opt = params as MenuItemOption;
     return {
       ...menuApi.value.getItemProps(params),
-      class: tw(clsx(slots.value.item())),
+      class: tw(
+        clsx(
+          slots.value.item(),
+          props.classNames?.item,
+          opt.classNames?.item,
+        ),
+      ),
     } as HTMLAttributes;
   };
 
   const getItemStartIconProps = (params: MenuItemOption) => {
     return {
       'data-color-palette': params.colorPalette,
-      class: tw(clsx(slots.value.itemStartIcon(), params?.className)),
+      class: tw(
+        clsx(
+          slots.value.itemStartIcon(),
+          props.classNames?.itemStartIcon,
+          params.classNames?.itemStartIcon,
+          params?.className,
+        ),
+      ),
+    } as HTMLAttributes;
+  };
+
+  const getItemLabelProps = (option: MenuItemOption) => {
+    return {
+      class: tw(
+        clsx(
+          slots.value.itemLabel(),
+          props.classNames?.itemLabel,
+          option.classNames?.itemLabel,
+        ),
+      ),
     } as HTMLAttributes;
   };
 
@@ -146,6 +175,7 @@ const useMenu = (params: UseMenuParams) => {
     getPositionerProps,
 
     getTriggerItemProps,
+    getItemLabelProps,
   };
 };
 

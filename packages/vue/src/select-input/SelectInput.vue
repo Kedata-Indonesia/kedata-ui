@@ -4,7 +4,7 @@ import type { SelectInputProps } from './index.types';
 import { KiCheveronDownSolid } from '@kedataindo/vue-icons';
 import { Tag } from '../tag';
 import { SelectPicker } from '../select-picker';
-import animateStatePreset from '../animate-state-preset';
+import FadeTransition from '../FadeTransition.vue';
 
 const props = withDefaults(defineProps<SelectInputProps>(), {
   mode: 'single',
@@ -71,16 +71,7 @@ const { isPlaceholderShown, selectedOptions, valueModel, ...api } =
     </div>
   </button>
 
-  <Transition
-    :duration="150"
-    :class="animateStatePreset.fadeUp.base"
-    :enter-from-class="animateStatePreset.fadeUp['enter-from']"
-    :enter-active-class="animateStatePreset.fadeUp['enter-active']"
-    :enter-to-class="animateStatePreset.fadeUp['enter-to']"
-    :leave-from-class="animateStatePreset.fadeUp['leave-from']"
-    :leave-active-class="animateStatePreset.fadeUp['leave-active']"
-    :leave-to-class="animateStatePreset.fadeUp['leave-to']"
-  >
+  <FadeTransition>
     <div v-if="api.isOpen.value" v-bind="api.getPositionerProps()">
       <div v-bind="api.getContentProps()">
         <SelectPicker
@@ -89,5 +80,5 @@ const { isPlaceholderShown, selectedOptions, valueModel, ...api } =
         />
       </div>
     </div>
-  </Transition>
+  </FadeTransition>
 </template>

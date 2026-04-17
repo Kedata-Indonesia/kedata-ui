@@ -21,7 +21,7 @@ const dialogHeaderSlots = tv(
       darkable: {
         true: {
           root: 'dark:border-b-dark-600 dark:bg-dark-800',
-          title: 'dark:dark-50 dark:text-white',
+          title: 'dark:text-dark-50',
           closeIcon: 'text-dark-400',
         },
       },

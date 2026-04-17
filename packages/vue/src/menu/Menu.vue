@@ -2,8 +2,7 @@
 import useMenu from './useMenu';
 import type { MenuEmits, MenuProps } from './index.types';
 import MenuTriggerItem from './MenuTriggerItem.vue';
-import animateStatePreset from '../animate-state-preset';
-import { Teleport } from 'vue';
+import FadeTransition from '../FadeTransition.vue';
 
 const props = defineProps<MenuProps>();
 const emits = defineEmits<MenuEmits>();
@@ -21,108 +20,84 @@ const { options, ...api } = useMenu({
 <template>
   <slot name="trigger" v-bind="api.getTriggerProps()"> </slot>
 
-  <Teleport to="body">
-    <Transition
-      :duration="150"
-      :class="animateStatePreset.fadeUp.base"
-      :enter-from-class="animateStatePreset.fadeUp['enter-from']"
-      :enter-active-class="animateStatePreset.fadeUp['enter-active']"
-      :enter-to-class="animateStatePreset.fadeUp['enter-to']"
-      :leave-from-class="animateStatePreset.fadeUp['leave-from']"
-      :leave-active-class="animateStatePreset.fadeUp['leave-active']"
-      :leave-to-class="animateStatePreset.fadeUp['leave-to']"
-    >
-      <div v-bind="api.getPositionerProps()" v-if="isOpen">
-        <div v-bind="api.getContentProps()">
-          <template v-for="option in options">
-            <template v-if="option.type === 'separator'">
-              <div v-bind="api.getSeparatorProps()"></div>
-            </template>
-            <template v-if="option.type === 'item'">
-              <template v-if="!option.options?.length">
-                <div v-bind="api.getItemProps(option)">
-                  <template v-if="option.startIcon">
-                    <component
-                      :is="option.startIcon"
-                      v-bind="api.getItemStartIconProps(option)"
-                    />
-                  </template>
+  <FadeTransition>
+    <div v-bind="api.getPositionerProps()" v-if="isOpen">
+      <div v-bind="api.getContentProps()">
+        <template v-for="option in options">
+          <template v-if="option.type === 'separator'">
+            <div v-bind="api.getSeparatorProps()"></div>
+          </template>
+          <template v-else>
+            <template v-if="!option.options?.length">
+              <div v-bind="api.getItemProps(option)">
+                <template v-if="option.startIcon">
+                  <component
+                    :is="option.startIcon"
+                    v-bind="api.getItemStartIconProps(option)"
+                  />
+                </template>
 
+                <span v-bind="api.getItemLabelProps(option)">
                   {{ option.label }}
-                </div>
-              </template>
-              <template v-else>
-                <MenuTriggerItem :option="option">
-                  <template #trigger="childApi">
-                    <div v-bind="api.getTriggerItemProps(childApi)">
-                      <template v-if="option.startIcon">
-                        <component
-                          :is="option.startIcon"
-                          v-bind="childApi.getItemStartIconProps(option)"
-                        />
-                      </template>
+                </span>
+              </div>
+            </template>
+            <template v-else>
+              <MenuTriggerItem :option="option">
+                <template #trigger="childApi">
+                  <div v-bind="api.getTriggerItemProps(childApi)">
+                    <template v-if="option.startIcon">
+                      <component
+                        :is="option.startIcon"
+                        v-bind="childApi.getItemStartIconProps(option)"
+                      />
+                    </template>
 
+                    <span v-bind="childApi.getItemLabelProps(option)">
                       {{ option.label }}
+                    </span>
+                  </div>
+
+                  <FadeTransition>
+                    <div
+                      v-bind="childApi.getPositionerProps()"
+                      v-if="childApi.open"
+                    >
+                      <div v-bind="childApi.getContentProps()">
+                        <template v-for="item in option.options">
+                          <template v-if="item.type === 'separator'">
+                            <div
+                              v-bind="childApi.getSeparatorProps()"
+                            ></div>
+                          </template>
+                          <template v-else>
+                            <div v-bind="childApi.getItemProps(item)">
+                              <template v-if="item.startIcon">
+                                <component
+                                  :is="item.startIcon"
+                                  v-bind="
+                                    childApi.getItemStartIconProps(item)
+                                  "
+                                />
+                              </template>
+
+                              <span v-bind="childApi.getItemLabelProps(item)">
+                                {{ item.label }}
+                              </span>
+                            </div>
+                          </template>
+                        </template>
+                      </div>
                     </div>
-
-                    <Teleport to="body">
-                      <Transition
-                        :duration="150"
-                        :class="animateStatePreset.fadeUp.base"
-                        :enter-from-class="
-                          animateStatePreset.fadeUp['enter-from']
-                        "
-                        :enter-active-class="
-                          animateStatePreset.fadeUp['enter-active']
-                        "
-                        :enter-to-class="animateStatePreset.fadeUp['enter-to']"
-                        :leave-from-class="
-                          animateStatePreset.fadeUp['leave-from']
-                        "
-                        :leave-active-class="
-                          animateStatePreset.fadeUp['leave-active']
-                        "
-                        :leave-to-class="animateStatePreset.fadeUp['leave-to']"
-                      >
-                        <div
-                          v-bind="childApi.getPositionerProps()"
-                          v-if="childApi.open"
-                        >
-                          <div v-bind="childApi.getContentProps()">
-                            <template v-for="item in option.options">
-                              <template v-if="item.type === 'separator'">
-                                <div
-                                  v-bind="childApi.getSeparatorProps()"
-                                ></div>
-                              </template>
-                              <template v-if="item.type === 'item'">
-                                <div v-bind="childApi.getItemProps(item)">
-                                  <template v-if="item.startIcon">
-                                    <component
-                                      :is="item.startIcon"
-                                      v-bind="
-                                        childApi.getItemStartIconProps(item)
-                                      "
-                                    />
-                                  </template>
-
-                                  {{ item.label }}
-                                </div>
-                              </template>
-                            </template>
-                          </div>
-                        </div>
-                      </Transition>
-                    </Teleport>
-                  </template>
-                </MenuTriggerItem>
-              </template>
+                  </FadeTransition>
+                </template>
+              </MenuTriggerItem>
             </template>
           </template>
-        </div>
+        </template>
       </div>
-    </Transition>
-  </Teleport>
+    </div>
+  </FadeTransition>
 
   <!-- <template v-for="childApi in api.childApis.value">
     <div v-bind="api.getPositionerProps()">

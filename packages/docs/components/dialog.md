@@ -1,9 +1,46 @@
 <script setup>
-import { ref } from 'vue';
-import { DialogContent, DialogHeader, DialogBody, DialogFooter, Button, useDialogStore } from '@kedataindo/vue';
+import { defineComponent, h } from 'vue';
+import { DialogContent, DialogHeader, DialogBody, DialogFooter, Button, useDialogStore, withDialog, useDialogContext } from '@kedataindo/vue';
 
 const store = useDialogStore();
 const store2 = useDialogStore();
+
+const BasicDialog = withDialog(
+  defineComponent({
+    name: 'BasicDialog',
+    setup() {
+      const { close } = useDialogContext();
+      return () =>
+        h(DialogContent, { class: 'w-full max-w-lg' }, () => [
+          h(DialogHeader, { title: 'Dialog Title', onClose: close }),
+          h(DialogBody, () =>
+            h('p', 'This is the dialog content. You can put any content here.'),
+          ),
+          h(DialogFooter, () => [
+            h(Button, { variant: 'outline', onClick: () => close() }, () => 'Cancel'),
+            h(Button, { onClick: () => close() }, () => 'Confirm'),
+          ]),
+        ]);
+    },
+  }),
+);
+
+const BottomSheetDialog = withDialog(
+  defineComponent({
+    name: 'BottomSheetDialog',
+    setup() {
+      const { close } = useDialogContext();
+      return () =>
+        h(DialogContent, () => [
+          h(DialogHeader, { title: 'Bottom Sheet', onClose: close }),
+          h(DialogBody, () => h('p', 'This dialog slides up from the bottom.')),
+          h(DialogFooter, () =>
+            h(Button, { onClick: () => close(), class: 'w-full' }, () => 'Close'),
+          ),
+        ]);
+    },
+  }),
+);
 </script>
 
 # Dialog
@@ -15,17 +52,7 @@ A modal dialog with header, body, and footer sections.
 <ClientOnly>
   <div class="demo-box">
     <Button @click="store.open()">Open Dialog</Button>
-
-    <DialogContent :store="store">
-      <DialogHeader title="Dialog Title" :onClose="store.close" />
-      <DialogBody>
-        <p>This is the dialog content. You can put any content here.</p>
-      </DialogBody>
-      <DialogFooter>
-        <Button variant="outline" @click="store.close()">Cancel</Button>
-        <Button @click="store.close()">Confirm</Button>
-      </DialogFooter>
-    </DialogContent>
+    <BasicDialog :store="store" />
   </div>
 </ClientOnly>
 
@@ -34,24 +61,16 @@ A modal dialog with header, body, and footer sections.
 import { ref } from 'vue';
 import {
   DialogContent, DialogHeader, DialogBody, DialogFooter,
-  Button, useDialogStore
+  Button, useDialogStore, withDialog, useDialogContext
 } from '@kedataindo/vue';
 
 const store = useDialogStore();
+
+const MyDialog = withDialog(/* your dialog component */);
 </script>
 
 <Button @click="store.open()">Open Dialog</Button>
-
-<DialogContent :store="store">
-  <DialogHeader title="Dialog Title" :onClose="store.close" />
-  <DialogBody>
-    <p>Dialog content goes here.</p>
-  </DialogBody>
-  <DialogFooter>
-    <Button variant="outline" @click="store.close()">Cancel</Button>
-    <Button @click="store.close()">Confirm</Button>
-  </DialogFooter>
-</DialogContent>
+<MyDialog :store="store" />
 ```
 
 ## Positions
@@ -59,16 +78,7 @@ const store = useDialogStore();
 <ClientOnly>
   <div class="demo-box">
     <Button @click="store2.open()" variant="outline">Bottom Sheet</Button>
-
-    <DialogContent :store="store2" position="bottom-center" paddingless responsiveBottom>
-      <DialogHeader title="Bottom Sheet" :onClose="store2.close" />
-      <DialogBody>
-        <p>This dialog slides up from the bottom.</p>
-      </DialogBody>
-      <DialogFooter>
-        <Button @click="store2.close()" class="w-full">Close</Button>
-      </DialogFooter>
-    </DialogContent>
+    <BottomSheetDialog :store="store2" position="bottom-center" paddingless responsiveBottom />
   </div>
 </ClientOnly>
 

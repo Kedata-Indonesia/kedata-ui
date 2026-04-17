@@ -77,8 +77,8 @@ const usePopover = (inProps: PopoverProps) => {
       className: twMerge(
         clsx(
           slots().positioner(),
-          animateStatePreset.fadeUp.base,
-          animateStatePreset.fadeUp[animateState()],
+          animateStatePreset.fade.base,
+          animateStatePreset.fade[animateState()],
           classNames()?.positioner,
           params.class,
         ),

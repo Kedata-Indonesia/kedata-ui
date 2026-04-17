@@ -164,8 +164,8 @@ const useSelectInput = (inProps: SelectInputProps) => {
           clsx(
             slots().positioner(),
             classNames?.positioner,
-            animateStatePreset.fadeUp.base,
-            animateStatePreset.fadeUp[animateState()],
+            animateStatePreset.fade.base,
+            animateStatePreset.fade[animateState()],
             params?.class,
           ),
         ),

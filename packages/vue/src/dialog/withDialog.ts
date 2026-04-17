@@ -1,5 +1,5 @@
 import { DialogContextKey } from './DialogContext';
-import animateStatePreset from '../animate-state-preset';
+import { fadeTransitionProps } from '../animate-state-preset';
 import * as dialog from '@zag-js/dialog';
 import { normalizeProps, useMachine } from '@zag-js/vue';
 import {
@@ -61,7 +61,7 @@ const withDialog = (DialogComponent: any) => {
         return {
           ...api.value.getBackdropProps(),
           hidden: undefined,
-          class: 'bg-black/50 absolute inset-0 opacity-0 transition-opacity z-10',
+          class: 'bg-black/50 fixed inset-0 z-50',
         } as HTMLAttributes;
       };
 
@@ -69,7 +69,7 @@ const withDialog = (DialogComponent: any) => {
         return {
           ...api.value.getPositionerProps(),
           class:
-            'fixed w-full top-0 left-1/2 h-full overflow-hidden -translate-x-1/2 transition-[opacity,top] z-10',
+            'fixed w-full top-0 left-1/2 h-full overflow-hidden -translate-x-1/2 z-50',
           style: {
             '--tw-translate-x': '-50.1%',
           },
@@ -96,38 +96,14 @@ const withDialog = (DialogComponent: any) => {
           Teleport,
           { to: 'body' },
           h('div', {}, [
-            h(
-              Transition,
-              {
-                duration: 150,
-                class: animateStatePreset.fade.base,
-                enterFromClass: animateStatePreset.fade['enter-from'],
-                enterToClass: animateStatePreset.fade['enter-to'],
-                leaveFromClass: animateStatePreset.fade['leave-from'],
-                leaveActiveClass: animateStatePreset.fade['leave-active'],
-                leaveToClass: animateStatePreset.fade['leave-to'],
-              },
-              () => {
-                return isOpen.value ? h('div', getBackdropProps(), []) : null;
-              },
-            ),
-            h(
-              Transition,
-              {
-                duration: 150,
-                class: animateStatePreset.fadeUp.base,
-                enterFromClass: animateStatePreset.fadeUp['enter-from'],
-                enterToClass: animateStatePreset.fadeUp['enter-to'],
-                leaveFromClass: animateStatePreset.fadeUp['leave-from'],
-                leaveActiveClass: animateStatePreset.fadeUp['leave-active'],
-                leaveToClass: animateStatePreset.fadeUp['leave-to'],
-              },
-              () => {
-                return isOpen.value
-                  ? h('div', getPositionerProps(), [h(DialogComponent)])
-                  : null;
-              },
-            ),
+            h(Transition, fadeTransitionProps, () => {
+              return isOpen.value ? h('div', getBackdropProps(), []) : null;
+            }),
+            h(Transition, fadeTransitionProps, () => {
+              return isOpen.value
+                ? h('div', getPositionerProps(), [h(DialogComponent)])
+                : null;
+            }),
           ]),
         );
       };

@@ -6,6 +6,7 @@ const open1 = ref(false);
 const open2 = ref(false);
 const open3 = ref(false);
 const open4 = ref(false);
+const open5 = ref(false);
 </script>
 
 # Tooltip
@@ -48,7 +49,7 @@ const open = ref(false);
 
 <ClientOnly>
   <div class="demo-box justify-center" style="min-height: 150px; padding: 60px;">
-    <Tooltip v-model:open="open1" placement="top">
+    <Tooltip v-model:open="open5" placement="top">
       <template #trigger="triggerProps">
         <Button v-bind="triggerProps" size="small">Top</Button>
       </template>

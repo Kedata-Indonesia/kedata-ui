@@ -154,8 +154,8 @@ const useColorInput = (inProps: ColorInputProps) => {
       () => api().getPositionerProps(),
       () => ({
         class: twMerge(
-          animateStatePreset.fadeUp.base,
-          animateStatePreset.fadeUp[animateState()],
+          animateStatePreset.fade.base,
+          animateStatePreset.fade[animateState()],
           getPositionerClassName(),
           classNames()?.positioner,
           params?.class,

@@ -5,7 +5,7 @@ import clsx from 'clsx';
 const dialogContentSlots = tv(
   {
     slots: {
-      root: clsx('rounded-md relative max-h-[100vh] flex flex-col p-6'),
+      root: clsx('rounded-md absolute max-h-[100vh] flex flex-col p-6'),
     },
     variants: {
       withParts: {
@@ -14,11 +14,11 @@ const dialogContentSlots = tv(
       position: {
         center: {
           root: clsx(
-            'max-h-[calc(100vh)] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
+            'max-h-[100vh] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
           ),
         },
         'top-center': {
-          root: clsx('max-h-[calc(100vh)] left-1/2 -translate-x-1/2 pt-12'),
+          root: clsx('max-h-[100vh] left-1/2 -translate-x-1/2 pt-12'),
         },
         'bottom-center': {
           root: clsx(

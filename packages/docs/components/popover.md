@@ -15,7 +15,7 @@ A floating content panel triggered by a button or element.
   <div class="demo-box" style="min-height: 200px; align-items: flex-start; padding-top: 60px;">
     <Popover v-model:open="open">
       <template #trigger="triggerProps">
-        <Button v-bind="triggerProps" @click="open = !open">Open Popover</Button>
+        <Button v-bind="triggerProps">Open Popover</Button>
       </template>
       <template #content>
         <div class="p-4 min-w-[200px]">
@@ -37,7 +37,7 @@ const open = ref(false);
 
 <Popover v-model:open="open">
   <template #trigger="triggerProps">
-    <Button v-bind="triggerProps" @click="open = !open">Open Popover</Button>
+    <Button v-bind="triggerProps">Open Popover</Button>
   </template>
   <template #content>
     <div class="p-4">

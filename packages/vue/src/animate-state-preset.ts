@@ -4,23 +4,37 @@
  */
 const animateStatePreset = {
   fade: {
-    base: "duration-150 transition-[opacity]",
+    base: "",
     "enter-from": "opacity-0",
-    "enter-active": "opacity-100",
+    "enter-active": "duration-150 transition-[opacity]",
     "enter-to": "opacity-100",
     "leave-from": "opacity-100",
-    "leave-active": "opacity-0",
+    "leave-active": "duration-150 transition-[opacity]",
     "leave-to": "opacity-0",
   },
   fadeUp: {
-    base: "duration-150 transition-[opacity,top]",
-    "enter-from": "opacity-0 !top-3",
-    "enter-active": "opacity-100 !top-0",
-    "enter-to": "opacity-100 !top-0",
-    "leave-from": "opacity-100 !top-0",
-    "leave-active": "opacity-0 !top-3",
-    "leave-to": "opacity-0 !top-3",
+    base: "",
+    "enter-from": "opacity-0 translate-y-1",
+    "enter-active": "duration-150 transition-[opacity,transform]",
+    "enter-to": "opacity-100 translate-y-0",
+    "leave-from": "opacity-100 translate-y-0",
+    "leave-active": "duration-150 transition-[opacity,transform]",
+    "leave-to": "opacity-0 translate-y-1",
   },
 };
+
+/**
+ * Props for Vue `<Transition>` / `h(Transition, …)` — single source for fade timing and classes.
+ */
+export const fadeTransitionProps = {
+  duration: 150,
+  class: animateStatePreset.fade.base,
+  enterFromClass: animateStatePreset.fade['enter-from'],
+  enterActiveClass: animateStatePreset.fade['enter-active'],
+  enterToClass: animateStatePreset.fade['enter-to'],
+  leaveFromClass: animateStatePreset.fade['leave-from'],
+  leaveActiveClass: animateStatePreset.fade['leave-active'],
+  leaveToClass: animateStatePreset.fade['leave-to'],
+} as const;
 
 export default animateStatePreset;

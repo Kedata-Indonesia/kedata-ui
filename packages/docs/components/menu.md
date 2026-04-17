@@ -29,10 +29,10 @@ A dropdown menu with options and separators.
     <div>
       <Menu v-model:isOpen="isOpen" :options="options" @select="onSelect">
         <template #trigger="triggerProps">
-          <Button v-bind="triggerProps" @click="isOpen = !isOpen">Actions</Button>
+          <Button v-bind="triggerProps">Actions</Button>
         </template>
       </Menu>
-      <p class="text-sm text-gray-500 mt-2">Selected: {{ selected }}</p>
+      <p class="text-sm text-gray-500 dark:text-gray-300 mt-2">Selected: {{ selected }}</p>
     </div>
   </div>
 </ClientOnly>
@@ -53,7 +53,7 @@ const options = [
 
 <Menu v-model:isOpen="isOpen" :options="options" @select="onSelect">
   <template #trigger="triggerProps">
-    <Button v-bind="triggerProps" @click="isOpen = !isOpen">Actions</Button>
+    <Button v-bind="triggerProps">Actions</Button>
   </template>
 </Menu>
 ```

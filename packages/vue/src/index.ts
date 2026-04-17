@@ -63,3 +63,7 @@ export * from './helper-text';
 export { default as ColorInput } from './color-input/ColorInput.vue';
 
 export * from './color-input/index.types';
+
+export { fadeTransitionProps } from './animate-state-preset';
+export { default as animateStatePreset } from './animate-state-preset';
+export { default as FadeTransition } from './FadeTransition.vue';

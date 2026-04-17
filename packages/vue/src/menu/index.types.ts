@@ -1,4 +1,4 @@
-import type { ColorPalette } from '@kedataindo/slots';
+import type { ColorPalette, MenuClassNames } from '@kedataindo/slots';
 import type { Component, ModelRef, VNode } from 'vue';
 
 export type MenuProps = {
@@ -6,6 +6,8 @@ export type MenuProps = {
   darkable?: boolean;
   options?: MenuOption[];
   mapValueSelect?: Record<string, (value: string) => void>;
+  /** Overrides for default menu slot classes (see `@kedataindo/slots` menu). */
+  classNames?: MenuClassNames;
 };
 
 export type MenuModels = {
@@ -41,5 +43,6 @@ export type MenuItemOption = {
   classNames?: {
     item?: string;
     itemStartIcon?: string;
+    itemLabel?: string;
   };
 };

@@ -1,14 +1,9 @@
 import { popoverSlots, tw } from '@kedataindo/slots';
 import * as popover from '@zag-js/popover';
 import { normalizeProps, useMachine } from '@zag-js/vue';
+import clsx from 'clsx';
 import type { PopoverModels, PopoverProps } from './index.types';
-import {
-  computed,
-  effect,
-  useId,
-  type ButtonHTMLAttributes,
-  type HTMLAttributes,
-} from 'vue';
+import { computed, useId, type HTMLAttributes } from 'vue';
 
 const usePopover = (props: PopoverProps, models: PopoverModels) => {
   const id = useId();
@@ -31,6 +26,7 @@ const usePopover = (props: PopoverProps, models: PopoverModels) => {
   const slots = computed(() => {
     return popoverSlots({
       withParts: props.withParts,
+      darkable: props.darkable ?? true,
     });
   });
 
@@ -51,7 +47,10 @@ const usePopover = (props: PopoverProps, models: PopoverModels) => {
   const getContentProps = () => {
     return {
       ...api.value.getContentProps(),
-      class: tw(slots.value.content()),
+      // v-if + Transition keep the node mounted during leave; Zag's hidden:!open
+      // would hide it immediately and break the exit animation (same as Menu).
+      hidden: false,
+      class: tw(clsx('light', slots.value.content(), props.class)),
     } as HTMLAttributes;
   };
 

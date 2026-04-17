@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import animateStatePreset from '../animate-state-preset';
 import { ColorPicker } from '../color-picker';
+import FadeTransition from '../FadeTransition.vue';
 import type { ColorInputProps } from './index.types';
 import useColorInput from './useColorInput';
 
@@ -28,21 +28,12 @@ const api = useColorInput(props, {
     </div>
   </button>
   <Teleport to="body">
-    <Transition
-      :duration="150"
-      :class="animateStatePreset.fadeUp.base"
-      :enter-from-class="animateStatePreset.fadeUp['enter-from']"
-      :enter-active-class="animateStatePreset.fadeUp['enter-active']"
-      :enter-to-class="animateStatePreset.fadeUp['enter-to']"
-      :leave-from-class="animateStatePreset.fadeUp['leave-from']"
-      :leave-active-class="animateStatePreset.fadeUp['leave-active']"
-      :leave-to-class="animateStatePreset.fadeUp['leave-to']"
-    >
+    <FadeTransition>
       <div v-bind="api.getPositionerProps()" v-if="isOpen">
         <div v-bind="api.getContentProps()">
           <ColorPicker v-bind="api.getColorPickerProps()" />
         </div>
       </div>
-    </Transition>
+    </FadeTransition>
   </Teleport>
 </template>
