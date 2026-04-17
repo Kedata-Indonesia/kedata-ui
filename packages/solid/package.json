@@ -1,6 +1,6 @@
 {
   "name": "@kedataindo/solid",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
@@ -28,7 +28,7 @@
   "dependencies": {
     "@kedata-software/toolkit-js": "^0.1.0",
     "@internationalized/date": "^3.8.0",
-    "@kedataindo/slots": "0.4.3",
+    "@kedataindo/slots": "0.4.5",
     "@kedataindo/solid-icons": "0.4.2",
     "@kedataindo/tailwind": "0.4.2",
     "@solid-primitives/media": "^2.3.0",
