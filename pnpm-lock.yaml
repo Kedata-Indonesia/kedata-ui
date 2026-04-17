@@ -239,7 +239,7 @@ importers:
   packages/slots:
     dependencies:
       '@kedataindo/tailwind':
-        specifier: 0.4.1
+        specifier: 0.4.2
         version: link:../tailwind
       clsx:
         specifier: ^2.1.1
@@ -261,12 +261,12 @@ importers:
         version: 0.1.2(typescript@5.9.2)(vue-tsc@2.2.12(typescript@5.9.2))
       '@kedataindo/slots':
         specifier: 0.4.3
-        version: link:../slots
+        version: 0.4.3(tailwindcss@3.4.17)
       '@kedataindo/solid-icons':
-        specifier: 0.4.1
+        specifier: 0.4.2
         version: link:../solid-icons
       '@kedataindo/tailwind':
-        specifier: 0.4.1
+        specifier: 0.4.2
         version: link:../tailwind
       '@solid-primitives/media':
         specifier: ^2.3.0
@@ -376,13 +376,13 @@ importers:
   packages/vue:
     dependencies:
       '@kedataindo/slots':
-        specifier: 0.4.3
+        specifier: 0.4.5
         version: link:../slots
       '@kedataindo/tailwind':
-        specifier: 0.4.1
+        specifier: 0.4.2
         version: link:../tailwind
       '@kedataindo/vue-icons':
-        specifier: 0.4.3
+        specifier: 0.4.4
         version: link:../vue-icons
       '@zag-js/avatar':
         specifier: 1.3.2
@@ -1359,6 +1359,12 @@ packages:
 
   '@kedata-software/toolkit-js@0.1.2':
     resolution: {integrity: sha512-IWTZ91KlR1KDXsAXSaBQSGBFkE055VlphDvMp2ghJq1YYDpQSNMO+A1zCmx7Oo1qDhwod8U15gzKgxfvTninOA==}
+
+  '@kedataindo/slots@0.4.3':
+    resolution: {integrity: sha512-qDZUKuS6qu/CeY7p+xFyBDwptzemfp2hBBRLmyG8PYIdyU8OY6zU0p63USFp/flOoL1+W0nthgsGF2Y7hUkEOA==}
+
+  '@kedataindo/tailwind@0.4.1':
+    resolution: {integrity: sha512-RnTXnVTPRZ5GSJl6zgMGRayIqgWW709gHpWJtdozppf0l/Pa9yhsRRQ/ersoCTTdAnSvziCak//y/EO31MRsyA==}
 
   '@mdx-js/react@3.1.0':
     resolution: {integrity: sha512-QjHtSaoameoalGnKDT3FoIl4+9RwyTmo9ZJGBdLOks/YOiWHoRDI3PUwEzOE7kEmGcV3AFcp9K6dYu9rEuKLAQ==}
@@ -6293,6 +6299,19 @@ snapshots:
       - unplugin-lightningcss
       - unplugin-unused
       - vue-tsc
+
+  '@kedataindo/slots@0.4.3(tailwindcss@3.4.17)':
+    dependencies:
+      '@kedataindo/tailwind': 0.4.1
+      clsx: 2.1.1
+      tailwind-merge: 2.6.0
+      tailwind-variants: 0.2.1(tailwindcss@3.4.17)
+    transitivePeerDependencies:
+      - tailwindcss
+
+  '@kedataindo/tailwind@0.4.1':
+    dependencies:
+      hex-rgb: 5.0.0
 
   '@mdx-js/react@3.1.0(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
