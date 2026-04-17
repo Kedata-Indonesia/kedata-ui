@@ -1,3 +1,30 @@
+## 0.4.2 (2026-04-17)
+
+### 🚀 Features
+
+- update props ([456abbb](https://github.com/Kedata-Indonesia/kedata-ui/commit/456abbb))
+- add docs package (VitePress) ([a12860a](https://github.com/Kedata-Indonesia/kedata-ui/commit/a12860a))
+- **deploy:** rename Dockerfile and add docker-compose ([653bb92](https://github.com/Kedata-Indonesia/kedata-ui/commit/653bb92))
+- **docs:** add Dockerfile and .dockerignore for containerized docs deployment ([3e22de8](https://github.com/Kedata-Indonesia/kedata-ui/commit/3e22de8))
+- **docs:** add Foundation and Assets sections to documentation ([b4c5085](https://github.com/Kedata-Indonesia/kedata-ui/commit/b4c5085))
+- **vue:** add tooltip placement, new component exports, and build CSS ([77d47ed](https://github.com/Kedata-Indonesia/kedata-ui/commit/77d47ed))
+
+### 🩹 Fixes
+
+- **pagination:** inactive items border-only style, fix VitePress border reset ([dbb91e6](https://github.com/Kedata-Indonesia/kedata-ui/commit/dbb91e6))
+- **select-picker:** add dark mode styles for dropdown options ([cb0876f](https://github.com/Kedata-Indonesia/kedata-ui/commit/cb0876f))
+- **slots:** add dark mode support and fix positioner z-index ([0b266a7](https://github.com/Kedata-Indonesia/kedata-ui/commit/0b266a7))
+- **solid:** use pnpm instead of yarn for test command in build script ([e0a8fea](https://github.com/Kedata-Indonesia/kedata-ui/commit/e0a8fea))
+- **vue:** move vue to peerDependencies to prevent dual instance on SSR ([4d4efcc](https://github.com/Kedata-Indonesia/kedata-ui/commit/4d4efcc))
+- **vue:** add node export condition and fix external regex for SSR compatibility ([dd48ebd](https://github.com/Kedata-Indonesia/kedata-ui/commit/dd48ebd))
+- **vue:** revert node export condition, bump versions ([c3098bc](https://github.com/Kedata-Indonesia/kedata-ui/commit/c3098bc))
+- **vue:** overlay components — dialog, menu, popover, tooltip ([c509584](https://github.com/Kedata-Indonesia/kedata-ui/commit/c509584))
+
+### ❤️ Thank You
+
+- canggih
+- harasya @harasya
+
 ## 0.3.2 (2025-10-19)
 
 ### 🩹 Fixes
